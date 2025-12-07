@@ -1,0 +1,13 @@
+path: <absolute_project_directory>/assets/<new_dataset> # Absolute path to new dataset
+train: images/train # Relative to 'path' 
+val: images/train # Relative to 'path'
+
+# fill all label names(written in <new_dataset>/notes.json)
+names: 
+  0: <label_name1>
+  1: <label_name2>
+  2: <label_name3>
+  3: <label_name4>
+  .
+  .
+  .
