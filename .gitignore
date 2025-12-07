@@ -1,6 +1,3 @@
-# Assets and runs ignored for keeping the repo size small
-assets/
-runs/
 # data.yaml changes according to system must be set locally
 data.yaml
 # Byte-compiled / optimized / DLL files

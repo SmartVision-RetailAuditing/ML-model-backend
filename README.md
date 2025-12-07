@@ -49,7 +49,6 @@ You must activate the environment every time you work on the project. When activ
 **For Windows:**
 
 - **Command Prompt (cmd.exe):**
-	DOS
 	```terminal
 	venv\Scripts\activate.bat
 	```
@@ -62,7 +61,6 @@ You must activate the environment every time you work on the project. When activ
 
 **For macOS / Linux:**
 
-Bash
 
 ```bash
 source venv/bin/activate
@@ -70,11 +68,11 @@ source venv/bin/activate
 
 ### 4\. Install Dependencies
 
-Once the environment is active (look for `(venv)` in your terminal), install the required packages (PyTorch, OpenCV, etc.) from the `requirements.txt` file.
+Once the environment is active (look for `(venv)` in your terminal), install the required packages.
 
 ```terminal
 pip install --upgrade pip
-pip install -r requirements.txt
+pip install -U ultralytics
 ```
 
 ### 5\. Deactivating the Environment
@@ -92,12 +90,10 @@ deactivate
 
 ```markdown
 smart-vision-yolo/
-├── assets/             # Raw and processed datasets (Git ignored)
-├── runs/               # Pre-trained YOLO weights (Git ignored)
-├── utils/              # Utility functions for image processing
-├── main.py             # Functions for training new model
-├── requirements.txt    # Project dependencies
-└── README.md           # Project documentation
+├── datasets/            # Raw and processed datasets (Git ignored)
+├── runs/                # Pre-trained YOLO weights and metrics
+├── train.py             # Functions for training new model
+└── README.md            # Project documentation
     ```
 
 ## 🚀 Usage
@@ -105,7 +101,17 @@ smart-vision-yolo/
 
 ### Train Custom Dataset
 
-#### Dataset Implementation
+##### Dataset Structure
+```markdown
+smart-vision-yolo/
+├── datasets/			# Raw and processed datasets (Git ignored)
+	├── images/             
+	├── labels/             # txt files with corresponding names to images
+	├── ../             
+	├── ..             
+```
+
+#### Labeling Dataset 
 1. Find a dataset that contains raw images without annotation.
 2. (in venv) 
 ```terminal
@@ -114,31 +120,25 @@ label-studio
 ```
 3. Create a new local account
 4. Create a project and import images(max. 100 image at a time)
-5. Set labeling tags (Ex. Apple, Banana, carrot etc.)
+5. Set labeling tags (Ex. Apple, Banana, Carrot etc.)
 6. Label each image
 7. Export -> YOLO with Images(image segmentation, object detection, keypoints)
-8. Unzip the downloaded zip folder into project's "/assets" directory.
+8. Unzip the downloaded zip folder into project's "/datasets" directory.
 
 On Linux/Mac OS
 (from project's root directory)
 ```bash
-unzip ~/Downloads/<zip_file.zip> -d ./assets/<new_dataset>/
+unzip ~/Downloads/<zip_file.zip> -d ./datasets/<new_dataset>/
 ```
 
 #### Train New Model
 1. Rename 'data.yaml.example' file as 'data.yaml'
-2. Fill the blanks (<...>) of the file
+2. Fill the blanks (<...>) in the file
 3. Enter virtual environment(venv) in terminal 
 4. Tune training model's parameters at main.py
-5. run 'python main.py'
-6. new training created at runs/detect
-7. move new models into root directory
+5. run 'python train.py'
+6. new training and metrics created at runs/detect
 
-
-### Testing with a camera
-
-```terminal
-python utils/yolo_detect.py --model <my_model.pt> --source usb0 --resolution 1280x720
 
 ```
 
