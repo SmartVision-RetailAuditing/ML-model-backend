@@ -1,21 +1,49 @@
+import datetime
 from ultralytics import YOLO
 
-# Load a pretrained model
-model = YOLO("yolo11n.pt")
+# 1. Load the Local Model
+model = YOLO("weights/best.pt")
 
-# Define source as YouTube video URL
-source = "https://www.youtube.com/shorts/iRdXmjIgYQg"
-# Define path to the image file
-# source = "path/to/image.jpg"
-# Define path to directory containing images and videos for inference
-# source = "path/to/dir"
+# 2. Set Timestamp
+timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 
-# Run inference on the source
-results = model(source, stream=True)  # generator of Results objects
+# 3. Define Image Path
+image_path = "images/test1.jpeg"
 
-for result in results:
-    boxes = result.boxes  # Boxes object for bounding box outputs
-    masks = result.masks  # Masks object for segmentation masks outputs
-    probs = result.probs  # Probs object for classification outputs
-    obb = result.obb  # Oriented boxes object for OBB outputs
-    result.show()  # display to screen
+try:
+    # 4. Perform Prediction
+    results = model.predict(source=image_path, conf=0.40)
+
+    print("\n" + "=" * 35)
+    print(f"📦 FAST ANALYSIS REPORT | {timestamp}")
+    print("=" * 35)
+
+    for r in results:
+        # Count total objects found
+        total_objects = len(r.boxes)
+        print(f"Total Objects Found: {total_objects}")
+        print("-" * 35)
+
+        # Count individual items
+        counts = {}
+        for c in r.boxes.cls:
+            label = r.names[int(c)]
+            counts[label] = counts.get(label, 0) + 1
+
+        # Print counting results
+        if not counts:
+            print("❌ No products found. Please check lighting or confidence threshold.")
+        else:
+            for item, count in counts.items():
+                print(f"✅ {item}: {count} pcs")
+
+        # Save the visual result
+        output_name = f"model_results/result_{timestamp}.jpg"
+        r.save(filename=output_name)
+
+    print("-" * 35)
+    print(f"📁 Image saved: {output_name}")
+    print("=" * 35)
+
+except Exception as e:
+    print(f"⚠️ An error occurred: {e}")
