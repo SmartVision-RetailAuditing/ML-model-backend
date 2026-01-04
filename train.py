@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 
 # load a pretrained model (recommended for training)
-model = YOLO("yolo11n.pt")
+model = YOLO("best.pt")
 
 # Train the model
 results = model.train(data="data.yaml", epochs=10, imgsz=640)
