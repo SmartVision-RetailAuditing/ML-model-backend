@@ -1,0 +1,1388 @@
+{
+    "153100000": {
+        "original_code": "153100000",
+        "brand": "PINAR",
+        "product_name": "Süt Tam Yağlı %3,3 1/1",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153107682": {
+        "original_code": "153107682",
+        "brand": "PINAR",
+        "product_name": "Süt %2,5 Yağlı 1 Lt",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153107803": {
+        "original_code": "153107803",
+        "brand": "PINAR",
+        "product_name": "SUT YARIM YAGLI %1 1/1",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153103445": {
+        "original_code": "153103445",
+        "brand": "PINAR",
+        "product_name": "Süt Denge Laktozsuz 1L",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153104759": {
+        "original_code": "153104759",
+        "brand": "PINAR",
+        "product_name": "Süt Denge Laktozsuz 500 ml",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153104167": {
+        "original_code": "153104167",
+        "brand": "PINAR",
+        "product_name": "Süt Denge Laktozsuz 200 ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153107773": {
+        "original_code": "153107773",
+        "brand": "PINAR",
+        "product_name": "Süt Denge Laktozsuz 4*1L",
+        "volume": "4000 ML",
+        "category": "SÜT"
+    },
+    "153101435": {
+        "original_code": "153101435",
+        "brand": "PINAR",
+        "product_name": "SÜT ORGANİK 1/1",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153108180": {
+        "original_code": "153108180",
+        "brand": "PINAR",
+        "product_name": "Süt Protein 1L",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153107642": {
+        "original_code": "153107642",
+        "brand": "PINAR",
+        "product_name": "Süt Çocuk 1/1",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153104763": {
+        "original_code": "153104763",
+        "brand": "PINAR",
+        "product_name": "SÜT ÇOCUK BALLI 1/2",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153104761": {
+        "original_code": "153104761",
+        "brand": "PINAR",
+        "product_name": "SÜT ÇOCUK 1/2",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153106325": {
+        "original_code": "153106325",
+        "brand": "PINAR",
+        "product_name": "Süt Protein Vanilyalı 500 ml",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153106322": {
+        "original_code": "153106322",
+        "brand": "PINAR",
+        "product_name": "Süt Protein Kakaolu 500  ml",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153106834": {
+        "original_code": "153106834",
+        "brand": "PINAR",
+        "product_name": "Süt Protein Çilekli 500 ml",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153106835": {
+        "original_code": "153106835",
+        "brand": "PINAR",
+        "product_name": "Süt Protein Muzlu-Yer Fıstıklı 500 ml",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153107432": {
+        "original_code": "153107432",
+        "brand": "PINAR",
+        "product_name": "Süt Protein Kahveli 500 ml",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153107871": {
+        "original_code": "153107871",
+        "brand": "PINAR",
+        "product_name": "Süt Yarım Yağlı %1 1/5",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153100002": {
+        "original_code": "153100002",
+        "brand": "PINAR",
+        "product_name": "Süt Tam Yağlı %3,3  1/5",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153102824": {
+        "original_code": "153102824",
+        "brand": "PINAR",
+        "product_name": "SÜT ORGANİK 1/5",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153107256": {
+        "original_code": "153107256",
+        "brand": "PINAR",
+        "product_name": "KİDO ÇİLEKLİ 180 ML",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153107257": {
+        "original_code": "153107257",
+        "brand": "PINAR",
+        "product_name": "KİDO MUZLU 180 ML",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153107258": {
+        "original_code": "153107258",
+        "brand": "PINAR",
+        "product_name": "KİDO KAKAOLU 180 ML",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153102824_ICIM": {
+        "original_code": "153102824",
+        "brand": "İçim",
+        "product_name": "Süt Organik 200 Ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153100000_TEKSUT": {
+        "original_code": "153100000",
+        "brand": "Teksüt",
+        "product_name": "Süt %3,0 yağlı 1L",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100000_TEKSUT_1": {
+        "original_code": "153100000",
+        "brand": "Teksüt",
+        "product_name": "Süt %3 yağlı 1 L",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153107258_DOST": {
+        "original_code": "153107258",
+        "brand": "Dost",
+        "product_name": "Süt Pastorize Çikolatalı 200 Ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153100000_SUTAS": {
+        "original_code": "153100000",
+        "brand": "Sütaş",
+        "product_name": "Süt Günlük 1000 Ml",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153106322_SEK": {
+        "original_code": "153106322",
+        "brand": "Sek",
+        "product_name": "Kakaolu Protein Süt 330 Ml",
+        "volume": "330 ML",
+        "category": "SÜT"
+    },
+    "153107256_YORUKOGLU": {
+        "original_code": "153107256",
+        "brand": "Yörükoğlu",
+        "product_name": "ÇİLEKLİ SÜT 180 ML",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153107642_MIS": {
+        "original_code": "153107642",
+        "brand": "Mis",
+        "product_name": "VİTAMİNLİ SÜT 1 LT",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153107803_YORUKSUT": {
+        "original_code": "153107803",
+        "brand": "Yörüksüt",
+        "product_name": "YARIM YAĞLI SÜT  1 LİTRE",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153107256_DOST": {
+        "original_code": "153107256",
+        "brand": "Dost",
+        "product_name": "ORMAN MEYVELİ SÜT 200 M",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153101435_CARREFOUR": {
+        "original_code": "153101435",
+        "brand": "Carrefour",
+        "product_name": "Bio Organik Süt 1000 Ml",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153107432_ICIM": {
+        "original_code": "153107432",
+        "brand": "İçim",
+        "product_name": "İçim Fit Protein Kahveli Süt 400ml",
+        "volume": "400 ML",
+        "category": "SÜT"
+    },
+    "153100000_SUTAS_1": {
+        "original_code": "153100000",
+        "brand": "Sütaş",
+        "product_name": "Süt %3,5 Yağlı 1/1",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153106322_ICIM": {
+        "original_code": "153106322",
+        "brand": "İçim",
+        "product_name": "İçim Fit Protein Kakaolu Süt 400 ml",
+        "volume": "400 ML",
+        "category": "SÜT"
+    },
+    "153107257_DOST": {
+        "original_code": "153107257",
+        "brand": "Dost",
+        "product_name": "MUZLU SÜT 200 ML",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153104167_ICIM": {
+        "original_code": "153104167",
+        "brand": "İçim",
+        "product_name": "Laktozsuz Süt 200 Ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153103445_MIS": {
+        "original_code": "153103445",
+        "brand": "Mis",
+        "product_name": "LAKTOZSUZ SÜT 1 LT",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100002_CARREFOUR": {
+        "original_code": "153100002",
+        "brand": "Carrefour",
+        "product_name": "Süt Yağlı 200 Ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153107256_AYNES": {
+        "original_code": "153107256",
+        "brand": "Aynes",
+        "product_name": "AYNES KALOJENLİ SÜT ÇİLEKLİ 180 ML",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153107258_DANONE": {
+        "original_code": "153107258",
+        "brand": "Danone",
+        "product_name": "Kakaolu Süt 1 Lt.",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153106834_ICIM": {
+        "original_code": "153106834",
+        "brand": "İçim",
+        "product_name": "İçim Fit Protein Çilekli Süt 400ml",
+        "volume": "400 ML",
+        "category": "SÜT"
+    },
+    "153100000_ICIM": {
+        "original_code": "153100000",
+        "brand": "İçim",
+        "product_name": "Süt  %3,5 Yağlı 1L",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153106325_ICIM": {
+        "original_code": "153106325",
+        "brand": "İçim",
+        "product_name": "İçim Fit Protein Vanilyalı Süt 400ml",
+        "volume": "400 ML",
+        "category": "SÜT"
+    },
+    "153100000_CARREFOUR": {
+        "original_code": "153100000",
+        "brand": "Carrefour",
+        "product_name": "Pastörize Süt 1 L",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100000_ICIM_1": {
+        "original_code": "153100000",
+        "brand": "İçim",
+        "product_name": "Süt Yağlı 1000 Ml",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100000_BALMAR": {
+        "original_code": "153100000",
+        "brand": "Balmar",
+        "product_name": "Süt Tam Yağlı 1L",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153103445_TORKU": {
+        "original_code": "153103445",
+        "brand": "Torku",
+        "product_name": "Süt Laktozsuz 1000 Ml",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153106322_ICIM_1": {
+        "original_code": "153106322",
+        "brand": "İçim",
+        "product_name": "Süt Fit Proteinli Çikolatalı 1/2",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153100000_ICIM_2": {
+        "original_code": "153100000",
+        "brand": "İçim",
+        "product_name": "Süt Günlük  Pastörize Tam Yağlı 1 Lt",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153104761_BEBELAC": {
+        "original_code": "153104761",
+        "brand": "Bebelac",
+        "product_name": "Süt Çocuk 1/2",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153101435_DOST": {
+        "original_code": "153101435",
+        "brand": "Dost",
+        "product_name": "Organik Süt 1 Lt.",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153103445_DANONE": {
+        "original_code": "153103445",
+        "brand": "Danone",
+        "product_name": "Laktozsuz Süt 1/1",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100000_ICIM_3": {
+        "original_code": "153100000",
+        "brand": "İçim",
+        "product_name": "Süt %3,0 Yağlı 1/1",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153103445_DOST": {
+        "original_code": "153103445",
+        "brand": "Dost",
+        "product_name": "Süt Laktozsuz 1 Lt",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153106322_DOST": {
+        "original_code": "153106322",
+        "brand": "Dost",
+        "product_name": "Protein Süt Hindistan Cevizli/Kakaolu 330 Ml.",
+        "volume": "330 ML",
+        "category": "SÜT"
+    },
+    "153104763_MIS": {
+        "original_code": "153104763",
+        "brand": "Mis",
+        "product_name": "Süt Ballı 200 Ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153106322_PERFORMANS": {
+        "original_code": "153106322",
+        "brand": "Performans",
+        "product_name": "Proteinli Kakaolu Süt 330 Ml.",
+        "volume": "330 ML",
+        "category": "SÜT"
+    },
+    "153107258_DOST_1": {
+        "original_code": "153107258",
+        "brand": "Dost",
+        "product_name": "Pastörize Süt Çikolatalı/Çilekli200 Ml.",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153107258_NESTLE": {
+        "original_code": "153107258",
+        "brand": "Nestle",
+        "product_name": "Nesquick Aromalı Süt Laktozsuz 180 Ml",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153100000_DOST": {
+        "original_code": "153100000",
+        "brand": "Dost",
+        "product_name": "Pastörize Süt 1 Lt.",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153104761_ICIM": {
+        "original_code": "153104761",
+        "brand": "İçim",
+        "product_name": "Süt Çocuk 1/2",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153107432_DOST": {
+        "original_code": "153107432",
+        "brand": "Dost",
+        "product_name": "Milkshake 330 Gr.",
+        "volume": "330 ML",
+        "category": "SÜT"
+    },
+    "153107682_SUTAS": {
+        "original_code": "153107682",
+        "brand": "Sütaş",
+        "product_name": "Süt % 2,5 Yağlı 1/1",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100002_SEK": {
+        "original_code": "153100002",
+        "brand": "Sek",
+        "product_name": "Süt Günlük 200 Ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153106322_NILKY": {
+        "original_code": "153106322",
+        "brand": "Nilky",
+        "product_name": "Badem Sütü 500 Ml",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153107256_ICIM": {
+        "original_code": "153107256",
+        "brand": "İçim",
+        "product_name": "Fan Çilekli Süt 200 Ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153106322_SEK_1": {
+        "original_code": "153106322",
+        "brand": "Sek",
+        "product_name": "Sek Protein Kakaolu 330 ml",
+        "volume": "330 ML",
+        "category": "SÜT"
+    },
+    "153100000_YORUKOGLU": {
+        "original_code": "153100000",
+        "brand": "Yörükoğlu",
+        "product_name": "Süt Tam Yağlı 1L",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153107803_ICIM": {
+        "original_code": "153107803",
+        "brand": "İçim",
+        "product_name": "Süt Yarım Yağlı 1/1",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153107682_SUTAS_1": {
+        "original_code": "153107682",
+        "brand": "Sütaş",
+        "product_name": "Süt %2,5 Yağlı 1 Lt",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153107803_SUTAS": {
+        "original_code": "153107803",
+        "brand": "Sütaş",
+        "product_name": "Süt Yarım Yağlı 1/1",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153106322_ICIM_2": {
+        "original_code": "153106322",
+        "brand": "İçim",
+        "product_name": "Süt Fit Proteinli  Çeşitleri 500 Ml",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153100000_SUTAS_2": {
+        "original_code": "153100000",
+        "brand": "Sütaş",
+        "product_name": "Süt %2,5 yağlı 1L",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153104761_ICIM_1": {
+        "original_code": "153104761",
+        "brand": "İçim",
+        "product_name": "Süt Çocuk 1/2",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153107642_ICIM": {
+        "original_code": "153107642",
+        "brand": "İçim",
+        "product_name": "Süt Çocuk 1/1",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153101435_ICIM": {
+        "original_code": "153101435",
+        "brand": "İçim",
+        "product_name": "Süt Organik 1/1",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153107803_SUTAS_1": {
+        "original_code": "153107803",
+        "brand": "Sütaş",
+        "product_name": "Sütaş %1,5 yağlı",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100000_ICIM_4": {
+        "original_code": "153100000",
+        "brand": "İçim",
+        "product_name": "Süt %3,0 yağlı 1L",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100000_ICIM_5": {
+        "original_code": "153100000",
+        "brand": "İçim",
+        "product_name": "Süt %3,5 yağlı 1L",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100000_SUTAS_3": {
+        "original_code": "153100000",
+        "brand": "Sütaş",
+        "product_name": "Süt %3,5 yağlı 1L",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153107871_ICIM": {
+        "original_code": "153107871",
+        "brand": "İçim",
+        "product_name": "İçim %1,5 yağlı 200ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153107803_ICIM_1": {
+        "original_code": "153107803",
+        "brand": "İçim",
+        "product_name": "İçim %1,5 yağlı 1/1",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153107871_SUTAS": {
+        "original_code": "153107871",
+        "brand": "Sütaş",
+        "product_name": "Sütaş 1,5 Yağlı 200ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153107258_BIRSAH": {
+        "original_code": "153107258",
+        "brand": "Birşah",
+        "product_name": "MİLKTEN MİLKİNO KAKAOLU 200 ml",
+        "volume": "200 G",
+        "category": "SÜT"
+    },
+    "153107256_BIRSAH": {
+        "original_code": "153107256",
+        "brand": "Birşah",
+        "product_name": "MİLKTEN MİLKİNO - ÇİLEKLİ 200 ml",
+        "volume": "200 G",
+        "category": "SÜT"
+    },
+    "153107257_BIRSAH": {
+        "original_code": "153107257",
+        "brand": "Birşah",
+        "product_name": "MİLKTEN MİLKİNO - MUZLU 200 ml",
+        "volume": "200 G",
+        "category": "SÜT"
+    },
+    "153100002_BIRSAH": {
+        "original_code": "153100002",
+        "brand": "Birşah",
+        "product_name": "BİRŞAH SÜT UHT 200 ml",
+        "volume": "200 G",
+        "category": "SÜT"
+    },
+    "153100000_BIRSAH": {
+        "original_code": "153100000",
+        "brand": "Birşah",
+        "product_name": "BİRŞAH SÜT Y.Y 1000 ml",
+        "volume": "1000 G",
+        "category": "SÜT"
+    },
+    "153100002_ICIM": {
+        "original_code": "153100002",
+        "brand": "İçim",
+        "product_name": "İÇİM Y.Y %1,5 YAĞ",
+        "volume": "200 G",
+        "category": "SÜT"
+    },
+    "153107803_DOST": {
+        "original_code": "153107803",
+        "brand": "Dost",
+        "product_name": "YARIM YAĞLI SÜT 1,5 YAĞLI 1000 ML",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100000_MIS": {
+        "original_code": "153100000",
+        "brand": "Mis",
+        "product_name": "SÜT TAM YAĞLI 1/1 %3,1 YAĞLI",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153107258_SUTAS": {
+        "original_code": "153107258",
+        "brand": "Sütaş",
+        "product_name": "SÜTAŞ - KAKAOLU 200 ml",
+        "volume": "200 G",
+        "category": "SÜT"
+    },
+    "153107256_SUTAS": {
+        "original_code": "153107256",
+        "brand": "Sütaş",
+        "product_name": "SÜTAŞ ÇİLEKLİ 200 ml",
+        "volume": "200 G",
+        "category": "SÜT"
+    },
+    "153100000_BIRSAH_1": {
+        "original_code": "153100000",
+        "brand": "Birşah",
+        "product_name": "BİRŞAH UHT %3,1 YAĞ 1000 ml",
+        "volume": "1000 G",
+        "category": "SÜT"
+    },
+    "153100000_BIRSAH_2": {
+        "original_code": "153100000",
+        "brand": "Birşah",
+        "product_name": "BİRŞAH UHT %3,5 YAĞ 1000 ml",
+        "volume": "1000 G",
+        "category": "SÜT"
+    },
+    "153104167_SUTAS": {
+        "original_code": "153104167",
+        "brand": "Sütaş",
+        "product_name": "SÜTAŞ LAKTOZSUZ SÜT 200 ml",
+        "volume": "200 G",
+        "category": "SÜT"
+    },
+    "153107258_SEK": {
+        "original_code": "153107258",
+        "brand": "Sek",
+        "product_name": "SEK SÜT AROMALI KAKAO 180 ML",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153107803_ICIM_2": {
+        "original_code": "153107803",
+        "brand": "İçim",
+        "product_name": "YARIM YAĞLI SÜT %1,5 YAĞLI 1000 ml",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153107803_DOST_1": {
+        "original_code": "153107803",
+        "brand": "Dost",
+        "product_name": "YARIM YAĞLI SÜT %0,5 YAĞLI 1000 ml",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153108180_ICIM": {
+        "original_code": "153108180",
+        "brand": "İçim",
+        "product_name": "İçim Fit Protein 1L",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153107803_MIS": {
+        "original_code": "153107803",
+        "brand": "Mis",
+        "product_name": "SÜT YARIM YAĞLI 1/1 %1,5 YAĞLI",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100002_DOST": {
+        "original_code": "153100002",
+        "brand": "Dost",
+        "product_name": "SÜT 200 ML 3.1 YAĞLI",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153107256_TORKU": {
+        "original_code": "153107256",
+        "brand": "Torku",
+        "product_name": "Süt Çilekli 180 Ml",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153107258_DANONE_1": {
+        "original_code": "153107258",
+        "brand": "Danone",
+        "product_name": "DANONE KAKAOLU 180 ml",
+        "volume": "180 G",
+        "category": "SÜT"
+    },
+    "153107256_DANONE": {
+        "original_code": "153107256",
+        "brand": "Danone",
+        "product_name": "DANONE - ÇİLEKLİ SÜT",
+        "volume": "180 G",
+        "category": "SÜT"
+    },
+    "153107803_BIRSAH": {
+        "original_code": "153107803",
+        "brand": "Birşah",
+        "product_name": "BİRŞAH YAĞSIZ SÜT 1000 ml",
+        "volume": "1000 G",
+        "category": "SÜT"
+    },
+    "153107803_TORKU": {
+        "original_code": "153107803",
+        "brand": "Torku",
+        "product_name": "TORKU Y.Y SÜT 1LT",
+        "volume": "1000 G",
+        "category": "SÜT"
+    },
+    "153103445_SEK": {
+        "original_code": "153103445",
+        "brand": "Sek",
+        "product_name": "SEK LAKTOZSUZ SÜT 1000 ml",
+        "volume": "1000 G",
+        "category": "SÜT"
+    },
+    "153106322_SEK_2": {
+        "original_code": "153106322",
+        "brand": "Sek",
+        "product_name": "SEK PROTEİN KAKAOLU 330 ml",
+        "volume": "330 G",
+        "category": "SÜT"
+    },
+    "153107256_SEK": {
+        "original_code": "153107256",
+        "brand": "Sek",
+        "product_name": "SEK SÜT AROMALI ÇİLEKLİ 180 ML",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153107257_SEK": {
+        "original_code": "153107257",
+        "brand": "Sek",
+        "product_name": "SEK SÜT AROMALI MUZ 180 ML",
+        "volume": "1080 ML",
+        "category": "SÜT"
+    },
+    "153100002_DOST_1": {
+        "original_code": "153100002",
+        "brand": "Dost",
+        "product_name": "TAM YAĞLI SÜT 3,1 YAĞLI 200 ML",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153107803_DOST_2": {
+        "original_code": "153107803",
+        "brand": "Dost",
+        "product_name": "YARIM YAĞLI SÜT %0,1 YAĞLI 1000 ml",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100000_SEK": {
+        "original_code": "153100000",
+        "brand": "Sek",
+        "product_name": "SEK SÜT %1,5 YAĞLI 1000 ml",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100002_MIS": {
+        "original_code": "153100002",
+        "brand": "Mis",
+        "product_name": "SÜT TAM YAĞLI 1/5  200 ML",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153107258_DANONE_2": {
+        "original_code": "153107258",
+        "brand": "Danone",
+        "product_name": "Süt Aromalı Çeşiteri 180 Ml",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153100000_DIMES": {
+        "original_code": "153100000",
+        "brand": "Dimes",
+        "product_name": "Süt Tam Yağlı 1000 Ml",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100002_DIMES": {
+        "original_code": "153100002",
+        "brand": "Dimes",
+        "product_name": "Süt Tam Yağlı 200 Ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153107258_EKER": {
+        "original_code": "153107258",
+        "brand": "Eker",
+        "product_name": "Süt Çikolatalı 180 Ml",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153100000_EKER": {
+        "original_code": "153100000",
+        "brand": "Eker",
+        "product_name": "Süt Günlük 1000 Ml",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153103445_ICIM": {
+        "original_code": "153103445",
+        "brand": "İçim",
+        "product_name": "Süt Organik 1000 Ml",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100000_SEK_1": {
+        "original_code": "153100000",
+        "brand": "Sek",
+        "product_name": "Süt Günlük 1000 Ml",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153104759_SEK": {
+        "original_code": "153104759",
+        "brand": "Sek",
+        "product_name": "Süt Laktozsuz 500 Ml",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153100000_SEK_2": {
+        "original_code": "153100000",
+        "brand": "Sek",
+        "product_name": "Süt Günlük 2 Lt",
+        "volume": "2000 ML",
+        "category": "SÜT"
+    },
+    "153103445_SEK_1": {
+        "original_code": "153103445",
+        "brand": "Sek",
+        "product_name": "Süt Laktozsuz 1000 Ml",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153104761_SMA": {
+        "original_code": "153104761",
+        "brand": "Sma",
+        "product_name": "Süt Devam 900 Ml",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153107258_ICIM": {
+        "original_code": "153107258",
+        "brand": "İçim",
+        "product_name": "Alpella Çikolatalı Süt 200 Ml",
+        "volume": "190 ML",
+        "category": "SÜT"
+    },
+    "153100000_TORKU": {
+        "original_code": "153100000",
+        "brand": "Torku",
+        "product_name": "Süt %3,3 Yağlı 1 L",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100000_BIRSAH_3": {
+        "original_code": "153100000",
+        "brand": "Birşah",
+        "product_name": "Süt Tam Yağlı 1L",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153107257_ICIM": {
+        "original_code": "153107257",
+        "brand": "İçim",
+        "product_name": "Fan Muzlu Süt 200 Ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153107256_DOST_1": {
+        "original_code": "153107256",
+        "brand": "Dost",
+        "product_name": "ÇİLEKLİ SÜT 200 ML",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153107258_DOST_2": {
+        "original_code": "153107258",
+        "brand": "Dost",
+        "product_name": "KAKAOLU SÜT 200 ML",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153100000_SUTAS_4": {
+        "original_code": "153100000",
+        "brand": "Sütaş",
+        "product_name": "LATTE 1 LT",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100000_METRO_ARO": {
+        "original_code": "153100000",
+        "brand": "Metro Aro",
+        "product_name": "Süt Tam Yağlı 1 L",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100002_AYNES": {
+        "original_code": "153100002",
+        "brand": "Aynes",
+        "product_name": "Süt Tam Yağlı 200 Ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153100000_AYNES": {
+        "original_code": "153100000",
+        "brand": "Aynes",
+        "product_name": "Süt Tam Yağlı 1000 Ml",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100000_MIGROS": {
+        "original_code": "153100000",
+        "brand": "Migros",
+        "product_name": "Süt Tam Yağlı 200 Ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153100000_MIGROS_1": {
+        "original_code": "153100000",
+        "brand": "Migros",
+        "product_name": "Süt Tam Yağlı 1 Lt",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100000_CARREFOUR_1": {
+        "original_code": "153100000",
+        "brand": "Carrefour",
+        "product_name": "Süt Tam Yağlı 1000 Ml",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100000_BESLER": {
+        "original_code": "153100000",
+        "brand": "Besler",
+        "product_name": "Süt Tam Yağlı 1000 Ml",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100000_DANONE": {
+        "original_code": "153100000",
+        "brand": "Danone",
+        "product_name": "Süt Tam Yağlı 1000 Ml",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100002_DANONE": {
+        "original_code": "153100002",
+        "brand": "Danone",
+        "product_name": "Süt Tam Yağlı 200 Ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153107256_NESTLE": {
+        "original_code": "153107256",
+        "brand": "Nestle",
+        "product_name": "Nesquick Aromalı Süt Çeşitleri 180 Ml",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153104167_SUTAS_1": {
+        "original_code": "153104167",
+        "brand": "Sütaş",
+        "product_name": "Süt Laktozsuz 200 Ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153100000_ICIM_6": {
+        "original_code": "153100000",
+        "brand": "İçim",
+        "product_name": "Süt Plastik Şişe 1000 Ml",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153107256_YORSAN": {
+        "original_code": "153107256",
+        "brand": "Yörsan",
+        "product_name": "Süt Aromalı 180 Ml",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153103445_ICIM_1": {
+        "original_code": "153103445",
+        "brand": "İçim",
+        "product_name": "Süt Laktozsuz 1000 Ml",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153107257_SEK_1": {
+        "original_code": "153107257",
+        "brand": "Sek",
+        "product_name": "Süt Aromalı Çeşitleri 180 Ml",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153107258_DANONE_3": {
+        "original_code": "153107258",
+        "brand": "Danone",
+        "product_name": "Danone Milkshake Çeşitleri 188 ML",
+        "volume": "188 ML",
+        "category": "SÜT"
+    },
+    "153104761_HEROBABY": {
+        "original_code": "153104761",
+        "brand": "HeroBaby",
+        "product_name": "Süt Çocuk 1/2",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153104761_SUTAS": {
+        "original_code": "153104761",
+        "brand": "Sütaş",
+        "product_name": "Süt Çocuk 1/2",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153100000_YORSAN": {
+        "original_code": "153100000",
+        "brand": "Yörsan",
+        "product_name": "Süt Tam Yağlı 1L",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100000_TORKU_1": {
+        "original_code": "153100000",
+        "brand": "Torku",
+        "product_name": "Süt Çiftçi Günlük 1L",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153104761_MILUPA": {
+        "original_code": "153104761",
+        "brand": "Milupa",
+        "product_name": "Süt Çocuk 1/2",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153106322_ICIM_3": {
+        "original_code": "153106322",
+        "brand": "İçim",
+        "product_name": "Süt Fit Proteinli Çikolatalı 500 Ml",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153100002_ICIM_1": {
+        "original_code": "153100002",
+        "brand": "İçim",
+        "product_name": "Süt Yağlı 200 Ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153107258_DANONE_4": {
+        "original_code": "153107258",
+        "brand": "Danone",
+        "product_name": "Süt Çikolatalı 180 Ml",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153107258_ICIM_1": {
+        "original_code": "153107258",
+        "brand": "İçim",
+        "product_name": "İçimino Kakaolu Süt 180 Ml",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153100002_SUTAS": {
+        "original_code": "153100002",
+        "brand": "Sütaş",
+        "product_name": "Süt Tam Yağlı 200 Ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153100000_SEK_3": {
+        "original_code": "153100000",
+        "brand": "Sek",
+        "product_name": "Süt %3 yağlı 1 L",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100002_SEK_1": {
+        "original_code": "153100002",
+        "brand": "Sek",
+        "product_name": "Süt Yağlı 200 Ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153100000_SUTAS_5": {
+        "original_code": "153100000",
+        "brand": "Sütaş",
+        "product_name": "Süt Tam Yağlı 1 L",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153103445_SUTAS": {
+        "original_code": "153103445",
+        "brand": "Sütaş",
+        "product_name": "Süt Laktozsuz 1/1",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100000_ICIM_7": {
+        "original_code": "153100000",
+        "brand": "İçim",
+        "product_name": "Süt Yağlı 1000 Ml",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153103445_ICIM_2": {
+        "original_code": "153103445",
+        "brand": "İçim",
+        "product_name": "Rahat Laktozsuz Süt 1/1",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100002_TORKU": {
+        "original_code": "153100002",
+        "brand": "Torku",
+        "product_name": "Süt Tam Yağlı 200 Ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153107258_TORKU": {
+        "original_code": "153107258",
+        "brand": "Torku",
+        "product_name": "Süt Kakaolu 180 Ml",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153107258_NESTLE_1": {
+        "original_code": "153107258",
+        "brand": "Nestle",
+        "product_name": "Nesquick Süt Kakaolu 180 Ml",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153107258_SUTAS_1": {
+        "original_code": "153107258",
+        "brand": "Sütaş",
+        "product_name": "Süt Çikolatalı 180 Ml",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153107258_SUTAS_2": {
+        "original_code": "153107258",
+        "brand": "Sütaş",
+        "product_name": "Süt Çikolatalı 200 ML",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153107258_SEK_1": {
+        "original_code": "153107258",
+        "brand": "Sek",
+        "product_name": "Süt Aromalı Pastorize Çeşitleri 200 Ml",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153106322_DANONE": {
+        "original_code": "153106322",
+        "brand": "Danone",
+        "product_name": "Süt Proteinli Kakolu 330 Ml",
+        "volume": "330 ML",
+        "category": "SÜT"
+    },
+    "153107258_ICIM_2": {
+        "original_code": "153107258",
+        "brand": "İçim",
+        "product_name": "Smart Aromalı Süt 200 Ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153103445_BIRSAH": {
+        "original_code": "153103445",
+        "brand": "Birşah",
+        "product_name": "BİRŞAH LAKTOZSUZ SÜT 1000 ml",
+        "volume": "1000 G",
+        "category": "SÜT"
+    },
+    "153103445_TORKU_1": {
+        "original_code": "153103445",
+        "brand": "Torku",
+        "product_name": "TORKU LAKTOZSUZ 1000 ml",
+        "volume": "1000 G",
+        "category": "SÜT"
+    },
+    "153103445_SUTAS_1": {
+        "original_code": "153103445",
+        "brand": "Sütaş",
+        "product_name": "SÜTAŞ LAKTOZSUZ 1000 ml",
+        "volume": "1000 G",
+        "category": "SÜT"
+    },
+    "153103445_ICIM_3": {
+        "original_code": "153103445",
+        "brand": "İçim",
+        "product_name": "İÇİM LAKTOZSUZ SÜT 1000",
+        "volume": "1000 G",
+        "category": "SÜT"
+    },
+    "153107682_SUTAS_2": {
+        "original_code": "153107682",
+        "brand": "Sütaş",
+        "product_name": "SÜTAŞ SÜT 2,5 YAĞLI 1000 ml",
+        "volume": "1000 G",
+        "category": "SÜT"
+    },
+    "153100000_SUTAS_6": {
+        "original_code": "153100000",
+        "brand": "Sütaş",
+        "product_name": "SÜTAŞ SÜT 3,5 YAĞLI 1000",
+        "volume": "1000 G",
+        "category": "SÜT"
+    },
+    "153103445_DOST_1": {
+        "original_code": "153103445",
+        "brand": "Dost",
+        "product_name": "LAKTOZSUZ SÜT (%1,5 YAĞ) 1000 ML",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153100000_DOST_1": {
+        "original_code": "153100000",
+        "brand": "Dost",
+        "product_name": "TAM YAĞLI SÜT 3,1 YAĞLI 1000 ML",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153107258_MIS": {
+        "original_code": "153107258",
+        "brand": "Mis",
+        "product_name": "SÜT AROMALI KAKAO 1/5 200 ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153107256_MIS": {
+        "original_code": "153107256",
+        "brand": "Mis",
+        "product_name": "SÜT AROMALI ÇİLEK 1/5 200 ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153107257_MIS": {
+        "original_code": "153107257",
+        "brand": "Mis",
+        "product_name": "SÜT AROMALI MUZ 1/5 200 ml",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153107642_MIS_1": {
+        "original_code": "153107642",
+        "brand": "Mis",
+        "product_name": "SÜT ÇOCUK 1/2 500 ML",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153100002_MIS_1": {
+        "original_code": "153100002",
+        "brand": "Mis",
+        "product_name": "SÜT TAM YAĞLI 1/2 500 ML",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153103445_MIS_1": {
+        "original_code": "153103445",
+        "brand": "Mis",
+        "product_name": "SÜT LAKTOZSUZ 1/1  %1,5 YAĞLI",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153103445_ICIM_4": {
+        "original_code": "153103445",
+        "brand": "İçim",
+        "product_name": "SÜT LAKTOZSUZ 1/1",
+        "volume": "1000 ML",
+        "category": "SÜT"
+    },
+    "153104761_ICIM_2": {
+        "original_code": "153104761",
+        "brand": "İçim",
+        "product_name": "ÇOCUK SÜTÜ 1/2 500 ML",
+        "volume": "500 ML",
+        "category": "SÜT"
+    },
+    "153104167_ICIM_1": {
+        "original_code": "153104167",
+        "brand": "İçim",
+        "product_name": "RAHAT LAKTOZSUZ SÜT 200 ML",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153100002_YORUKOGLU": {
+        "original_code": "153100002",
+        "brand": "Yörükoğlu",
+        "product_name": "SÜT %3 YAĞLI 180 ML",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153107258_YORUKOGLU": {
+        "original_code": "153107258",
+        "brand": "Yörükoğlu",
+        "product_name": "KAKAOLU SÜT 180 ML",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153107256_ICIM_1": {
+        "original_code": "153107256",
+        "brand": "İçim",
+        "product_name": "İÇİMİNO ÇİLEKLİ SÜT 180 ML",
+        "volume": "180 ML",
+        "category": "SÜT"
+    },
+    "153107258_MIS_1": {
+        "original_code": "153107258",
+        "brand": "Mis",
+        "product_name": "Süt Aromalı Çeşitleri 200 Ml.",
+        "volume": "200 ML",
+        "category": "SÜT"
+    },
+    "153107256_MIS_1": {
+        "original_code": "153107256",
+        "brand": "Mis",
+        "product_name": "SÜT BİSKÜVİ AROMALI 200 ML",
+        "volume": "200 ML",
+        "category": "SÜT"
+    }
+}

@@ -1,0 +1,13 @@
+names:
+- price_tag
+- product
+nc: 2
+roboflow:
+  license: CC BY 4.0
+  project: product_and_price_detection
+  url: https://universe.roboflow.com/leavenkworth/product_and_price_detection/dataset/4
+  version: 4
+  workspace: leavenkworth
+test: ../test/images
+train: ../train/images
+val: ../valid/images
