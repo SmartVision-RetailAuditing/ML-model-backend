@@ -1,6 +1,6 @@
 from fastapi import APIRouter, UploadFile, File
 from fastapi.responses import JSONResponse
-from api.PredictService import process_image
+from api.services.PredictService import process_image
 
 router = APIRouter()
 

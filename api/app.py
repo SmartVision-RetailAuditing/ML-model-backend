@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from api.PredictController import router
+from api.controllers.PredictController import router
 
 app = FastAPI(title="ML Raf Tanıma API")
 
