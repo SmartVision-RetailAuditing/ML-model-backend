@@ -1,0 +1,12 @@
+ultralytics
+opencv-python
+numpy
+pandas
+torch
+torchvision
+ftfy
+regex
+tqdm
+paddlepaddle
+paddleocr
+git+https://github.com/openai/CLIP.git

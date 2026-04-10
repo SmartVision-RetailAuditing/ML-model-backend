@@ -1,0 +1,1365 @@
+{
+    "fileName": "test_raf2.jpg",
+    "detectedProducts": [
+        {
+            "original_code": "153107258",
+            "brand": "Danone",
+            "product_name": "Kakaolu Süt 1 Lt.",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.51,
+            "shelfPosition": {
+                "x": 0.31,
+                "y": 0.71
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                551,
+                1661,
+                670,
+                2000
+            ]
+        },
+        {
+            "original_code": "153107258",
+            "brand": "Danone",
+            "product_name": "Kakaolu Süt 1 Lt.",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.37,
+            "shelfPosition": {
+                "x": 0.27,
+                "y": 0.86
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                473,
+                2073,
+                590,
+                2381
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "PINAR",
+            "product_name": "Süt Tam Yağlı %3,3 1/1",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.57,
+            "shelfPosition": {
+                "x": 0.85,
+                "y": 0.55
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                1571,
+                1265,
+                1743,
+                1601
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "PINAR",
+            "product_name": "Süt Tam Yağlı %3,3 1/1",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.54,
+            "shelfPosition": {
+                "x": 0.82,
+                "y": 0.88
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                1517,
+                2114,
+                1676,
+                2428
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "PINAR",
+            "product_name": "Süt Tam Yağlı %3,3 1/1",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.77,
+            "shelfPosition": {
+                "x": 0.88,
+                "y": 0.37
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                1609,
+                780,
+                1797,
+                1143
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "PINAR",
+            "product_name": "Süt Tam Yağlı %3,3 1/1",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.62,
+            "shelfPosition": {
+                "x": 0.9,
+                "y": 0.88
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                1665,
+                2123,
+                1832,
+                2443
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "PINAR",
+            "product_name": "Süt Tam Yağlı %3,3 1/1",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.8,
+            "shelfPosition": {
+                "x": 0.84,
+                "y": 0.72
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                1551,
+                1686,
+                1723,
+                2040
+            ]
+        },
+        {
+            "original_code": "153101435",
+            "brand": "Carrefour",
+            "product_name": "Bio Organik Süt 1000 Ml",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.25,
+            "shelfPosition": {
+                "x": 0.2,
+                "y": 0.7
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                322,
+                1647,
+                440,
+                1985
+            ]
+        },
+        {
+            "original_code": "153107258",
+            "brand": "Danone",
+            "product_name": "Kakaolu Süt 1 Lt.",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.28,
+            "shelfPosition": {
+                "x": 0.33,
+                "y": 0.86
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                587,
+                2076,
+                704,
+                2385
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "PINAR",
+            "product_name": "Süt Tam Yağlı %3,3 1/1",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.66,
+            "shelfPosition": {
+                "x": 0.94,
+                "y": 0.55
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                1730,
+                1260,
+                1910,
+                1606
+            ]
+        },
+        {
+            "original_code": "153102824",
+            "brand": "Icim",
+            "product_name": "Süt Organik 200 Ml",
+            "volume": "200 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.9,
+            "shelfPosition": {
+                "x": 0.74,
+                "y": 0.87
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                1365,
+                2107,
+                1522,
+                2417
+            ]
+        },
+        {
+            "original_code": "153102824",
+            "brand": "Icim",
+            "product_name": "Süt Organik 200 Ml",
+            "volume": "200 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.89,
+            "shelfPosition": {
+                "x": 0.67,
+                "y": 0.87
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                1219,
+                2104,
+                1373,
+                2417
+            ]
+        },
+        {
+            "original_code": "153102824",
+            "brand": "Icim",
+            "product_name": "Süt Organik 200 Ml",
+            "volume": "200 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.85,
+            "shelfPosition": {
+                "x": 0.6,
+                "y": 0.71
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                1086,
+                1677,
+                1241,
+                2018
+            ]
+        },
+        {
+            "original_code": "153102824",
+            "brand": "Icim",
+            "product_name": "Süt Organik 200 Ml",
+            "volume": "200 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.79,
+            "shelfPosition": {
+                "x": 0.59,
+                "y": 0.87
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                1068,
+                2098,
+                1219,
+                2411
+            ]
+        },
+        {
+            "original_code": "153106322",
+            "brand": "Performans",
+            "product_name": "Proteinli Kakaolu Süt 330 Ml.",
+            "volume": "330 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.24,
+            "shelfPosition": {
+                "x": 0.93,
+                "y": 0.18
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                1721,
+                286,
+                1911,
+                653
+            ]
+        },
+        {
+            "original_code": "153102824",
+            "brand": "Icim",
+            "product_name": "Süt Organik 200 Ml",
+            "volume": "200 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.88,
+            "shelfPosition": {
+                "x": 0.61,
+                "y": 0.55
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                1098,
+                1252,
+                1258,
+                1591
+            ]
+        },
+        {
+            "original_code": "153102824",
+            "brand": "Icim",
+            "product_name": "Süt Organik 200 Ml",
+            "volume": "200 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.84,
+            "shelfPosition": {
+                "x": 0.69,
+                "y": 0.55
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                1255,
+                1257,
+                1418,
+                1595
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "Sutas",
+            "product_name": "Süt Günlük 1000 Ml",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.48,
+            "shelfPosition": {
+                "x": 0.44,
+                "y": 0.54
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                788,
+                1244,
+                941,
+                1581
+            ]
+        },
+        {
+            "original_code": "153102824",
+            "brand": "Icim",
+            "product_name": "Süt Organik 200 Ml",
+            "volume": "200 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.86,
+            "shelfPosition": {
+                "x": 0.76,
+                "y": 0.72
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                1398,
+                1684,
+                1560,
+                2031
+            ]
+        },
+        {
+            "original_code": "153107258",
+            "brand": "Danone",
+            "product_name": "Kakaolu Süt 1 Lt.",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.65,
+            "shelfPosition": {
+                "x": 0.25,
+                "y": 0.54
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                417,
+                1235,
+                540,
+                1569
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "Sutas",
+            "product_name": "Süt Günlük 1000 Ml",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.25,
+            "shelfPosition": {
+                "x": 0.44,
+                "y": 0.71
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                786,
+                1672,
+                937,
+                2004
+            ]
+        },
+        {
+            "original_code": "153102824",
+            "brand": "Icim",
+            "product_name": "Süt Organik 200 Ml",
+            "volume": "200 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.86,
+            "shelfPosition": {
+                "x": 0.68,
+                "y": 0.72
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                1242,
+                1683,
+                1400,
+                2025
+            ]
+        },
+        {
+            "original_code": "153102824",
+            "brand": "Icim",
+            "product_name": "Süt Organik 200 Ml",
+            "volume": "200 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.86,
+            "shelfPosition": {
+                "x": 0.77,
+                "y": 0.55
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                1412,
+                1261,
+                1581,
+                1598
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "PINAR",
+            "product_name": "Süt Tam Yağlı %3,3 1/1",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.99,
+            "shelfPosition": {
+                "x": 0.45,
+                "y": 0.86
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                824,
+                2080,
+                945,
+                2394
+            ]
+        },
+        {
+            "original_code": "153102824",
+            "brand": "Icim",
+            "product_name": "Süt Organik 200 Ml",
+            "volume": "200 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.8,
+            "shelfPosition": {
+                "x": 0.62,
+                "y": 0.37
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                1119,
+                799,
+                1285,
+                1143
+            ]
+        },
+        {
+            "original_code": "153107258",
+            "brand": "Danone",
+            "product_name": "Kakaolu Süt 1 Lt.",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.44,
+            "shelfPosition": {
+                "x": 0.31,
+                "y": 0.54
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                541,
+                1232,
+                665,
+                1573
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "PINAR",
+            "product_name": "Süt Tam Yağlı %3,3 1/1",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.4,
+            "shelfPosition": {
+                "x": 0.92,
+                "y": 0.72
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                1707,
+                1695,
+                1883,
+                2043
+            ]
+        },
+        {
+            "original_code": "153102824",
+            "brand": "Icim",
+            "product_name": "Süt Organik 200 Ml",
+            "volume": "200 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.89,
+            "shelfPosition": {
+                "x": 0.79,
+                "y": 0.37
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                1445,
+                790,
+                1616,
+                1141
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "PINAR",
+            "product_name": "Süt Tam Yağlı %3,3 1/1",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.87,
+            "shelfPosition": {
+                "x": 0.37,
+                "y": 0.54
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                667,
+                1215,
+                787,
+                1576
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "Sutas",
+            "product_name": "Süt Günlük 1000 Ml",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.22,
+            "shelfPosition": {
+                "x": 0.52,
+                "y": 0.71
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                937,
+                1674,
+                1084,
+                2008
+            ]
+        },
+        {
+            "original_code": "153102824",
+            "brand": "Icim",
+            "product_name": "Süt Organik 200 Ml",
+            "volume": "200 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.77,
+            "shelfPosition": {
+                "x": 0.7,
+                "y": 0.38
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                1282,
+                815,
+                1451,
+                1142
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "Sutas",
+            "product_name": "Süt Günlük 1000 Ml",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.34,
+            "shelfPosition": {
+                "x": 0.52,
+                "y": 0.55
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                941,
+                1249,
+                1097,
+                1584
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "Sutas",
+            "product_name": "Süt Günlük 1000 Ml",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.42,
+            "shelfPosition": {
+                "x": 0.11,
+                "y": 0.54
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                142,
+                1252,
+                303,
+                1567
+            ]
+        },
+        {
+            "original_code": "153107256",
+            "brand": "Yorukoglu",
+            "product_name": "ÇİLEKLİ SÜT 180 ML",
+            "volume": "180 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.21,
+            "shelfPosition": {
+                "x": 0.05,
+                "y": 0.15
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                18,
+                291,
+                157,
+                485
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "PINAR",
+            "product_name": "Süt Tam Yağlı %3,3 1/1",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.98,
+            "shelfPosition": {
+                "x": 0.38,
+                "y": 0.38
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                670,
+                834,
+                796,
+                1137
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "Sutas",
+            "product_name": "Süt Günlük 1000 Ml",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.2,
+            "shelfPosition": {
+                "x": 0.12,
+                "y": 0.7
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                165,
+                1663,
+                321,
+                1983
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "PINAR",
+            "product_name": "Süt Tam Yağlı %3,3 1/1",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.99,
+            "shelfPosition": {
+                "x": 0.39,
+                "y": 0.86
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                701,
+                2076,
+                821,
+                2388
+            ]
+        },
+        {
+            "original_code": "153107258",
+            "brand": "Birsah",
+            "product_name": "MİLKTEN MİLKİNO KAKAOLU 200 ml",
+            "volume": "200 G",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.6,
+            "shelfPosition": {
+                "x": 0.16,
+                "y": 0.85
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                242,
+                2063,
+                368,
+                2368
+            ]
+        },
+        {
+            "original_code": "153107258",
+            "brand": "Birsah",
+            "product_name": "MİLKTEN MİLKİNO KAKAOLU 200 ml",
+            "volume": "200 G",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.22,
+            "shelfPosition": {
+                "x": 0.71,
+                "y": 0.19
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                1306,
+                307,
+                1451,
+                655
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "PINAR",
+            "product_name": "Süt Tam Yağlı %3,3 1/1",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.49,
+            "shelfPosition": {
+                "x": 0.39,
+                "y": 0.98
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                723,
+                2469,
+                796,
+                2589
+            ]
+        },
+        {
+            "original_code": "153107256",
+            "brand": "Yorukoglu",
+            "product_name": "ÇİLEKLİ SÜT 180 ML",
+            "volume": "180 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.39,
+            "shelfPosition": {
+                "x": 0.11,
+                "y": 0.22
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                160,
+                483,
+                285,
+                666
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "PINAR",
+            "product_name": "Süt Tam Yağlı %3,3 1/1",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.99,
+            "shelfPosition": {
+                "x": 0.52,
+                "y": 0.86
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                945,
+                2084,
+                1063,
+                2395
+            ]
+        },
+        {
+            "original_code": "153107258",
+            "brand": "Danone",
+            "product_name": "Kakaolu Süt 1 Lt.",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.25,
+            "shelfPosition": {
+                "x": 0.25,
+                "y": 0.7
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                434,
+                1653,
+                556,
+                1991
+            ]
+        },
+        {
+            "original_code": "153107256",
+            "brand": "Yorukoglu",
+            "product_name": "ÇİLEKLİ SÜT 180 ML",
+            "volume": "180 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.11,
+            "shelfPosition": {
+                "x": 0.22,
+                "y": 0.18
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                369,
+                297,
+                505,
+                661
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "Sutas",
+            "product_name": "Süt Günlük 1000 Ml",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.57,
+            "shelfPosition": {
+                "x": 0.53,
+                "y": 0.37
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                955,
+                803,
+                1119,
+                1139
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "PINAR",
+            "product_name": "Süt Tam Yağlı %3,3 1/1",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 1.0,
+            "shelfPosition": {
+                "x": 0.38,
+                "y": 0.71
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                669,
+                1657,
+                790,
+                2004
+            ]
+        },
+        {
+            "original_code": "153107256",
+            "brand": "Yorukoglu",
+            "product_name": "ÇİLEKLİ SÜT 180 ML",
+            "volume": "180 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.31,
+            "shelfPosition": {
+                "x": 0.85,
+                "y": 0.18
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                1585,
+                295,
+                1735,
+                650
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "PINAR",
+            "product_name": "Süt Tam Yağlı %3,3 1/1",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.58,
+            "shelfPosition": {
+                "x": 0.43,
+                "y": 0.98
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                798,
+                2474,
+                875,
+                2589
+            ]
+        },
+        {
+            "original_code": "153107256",
+            "brand": "Yorukoglu",
+            "product_name": "ÇİLEKLİ SÜT 180 ML",
+            "volume": "180 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.17,
+            "shelfPosition": {
+                "x": 0.05,
+                "y": 0.22
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                40,
+                490,
+                165,
+                667
+            ]
+        },
+        {
+            "original_code": "153107258",
+            "brand": "Danone",
+            "product_name": "Kakaolu Süt 1 Lt.",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.53,
+            "shelfPosition": {
+                "x": 0.31,
+                "y": 0.37
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                537,
+                786,
+                668,
+                1136
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "Sutas",
+            "product_name": "Süt Günlük 1000 Ml",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.39,
+            "shelfPosition": {
+                "x": 0.45,
+                "y": 0.37
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                795,
+                798,
+                952,
+                1138
+            ]
+        },
+        {
+            "original_code": "153102824",
+            "brand": "Icim",
+            "product_name": "Süt Organik 200 Ml",
+            "volume": "200 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.04,
+            "shelfPosition": {
+                "x": 0.05,
+                "y": 0.7
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                25,
+                1662,
+                178,
+                1982
+            ]
+        },
+        {
+            "original_code": "153107256",
+            "brand": "Yorukoglu",
+            "product_name": "ÇİLEKLİ SÜT 180 ML",
+            "volume": "180 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.41,
+            "shelfPosition": {
+                "x": 0.78,
+                "y": 0.18
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                1443,
+                290,
+                1591,
+                652
+            ]
+        },
+        {
+            "original_code": "153101435",
+            "brand": "Carrefour",
+            "product_name": "Bio Organik Süt 1000 Ml",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.15,
+            "shelfPosition": {
+                "x": 0.18,
+                "y": 0.54
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                294,
+                1209,
+                417,
+                1567
+            ]
+        },
+        {
+            "original_code": "153107258",
+            "brand": "Birsah",
+            "product_name": "MİLKTEN MİLKİNO KAKAOLU 200 ml",
+            "volume": "200 G",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.63,
+            "shelfPosition": {
+                "x": 0.22,
+                "y": 0.86
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                363,
+                2066,
+                474,
+                2373
+            ]
+        },
+        {
+            "original_code": "153107258",
+            "brand": "Birsah",
+            "product_name": "MİLKTEN MİLKİNO KAKAOLU 200 ml",
+            "volume": "200 G",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.55,
+            "shelfPosition": {
+                "x": 0.27,
+                "y": 0.97
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                497,
+                2463,
+                572,
+                2589
+            ]
+        },
+        {
+            "original_code": "153107256",
+            "brand": "Yorukoglu",
+            "product_name": "ÇİLEKLİ SÜT 180 ML",
+            "volume": "180 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.22,
+            "shelfPosition": {
+                "x": 0.36,
+                "y": 0.19
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                629,
+                303,
+                762,
+                658
+            ]
+        },
+        {
+            "original_code": "153107256",
+            "brand": "Yorukoglu",
+            "product_name": "ÇİLEKLİ SÜT 180 ML",
+            "volume": "180 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.55,
+            "shelfPosition": {
+                "x": 0.29,
+                "y": 0.18
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                498,
+                293,
+                633,
+                656
+            ]
+        },
+        {
+            "original_code": "153102824",
+            "brand": "Icim",
+            "product_name": "Süt Organik 200 Ml",
+            "volume": "200 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.98,
+            "shelfPosition": {
+                "x": 0.11,
+                "y": 0.37
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                132,
+                800,
+                296,
+                1133
+            ]
+        },
+        {
+            "original_code": "153107256",
+            "brand": "Yorukoglu",
+            "product_name": "ÇİLEKLİ SÜT 180 ML",
+            "volume": "180 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.37,
+            "shelfPosition": {
+                "x": 0.11,
+                "y": 0.15
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                148,
+                291,
+                299,
+                484
+            ]
+        },
+        {
+            "original_code": "153107256",
+            "brand": "Yorukoglu",
+            "product_name": "ÇİLEKLİ SÜT 180 ML",
+            "volume": "180 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.32,
+            "shelfPosition": {
+                "x": 0.64,
+                "y": 0.18
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                1169,
+                301,
+                1308,
+                655
+            ]
+        },
+        {
+            "original_code": "153107258",
+            "brand": "Danone",
+            "product_name": "Kakaolu Süt 1 Lt.",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.72,
+            "shelfPosition": {
+                "x": 0.25,
+                "y": 0.38
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                411,
+                826,
+                543,
+                1134
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "PINAR",
+            "product_name": "Süt Tam Yağlı %3,3 1/1",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.22,
+            "shelfPosition": {
+                "x": 0.18,
+                "y": 0.36
+            },
+            "isEyeLevel": true,
+            "bbox": [
+                290,
+                750,
+                421,
+                1132
+            ]
+        },
+        {
+            "original_code": "153107258",
+            "brand": "Birsah",
+            "product_name": "MİLKTEN MİLKİNO KAKAOLU 200 ml",
+            "volume": "200 G",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.32,
+            "shelfPosition": {
+                "x": 0.43,
+                "y": 0.19
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                763,
+                303,
+                898,
+                658
+            ]
+        },
+        {
+            "original_code": "153107256",
+            "brand": "Yorukoglu",
+            "product_name": "ÇİLEKLİ SÜT 180 ML",
+            "volume": "180 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.22,
+            "shelfPosition": {
+                "x": 0.5,
+                "y": 0.18
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                899,
+                287,
+                1032,
+                658
+            ]
+        },
+        {
+            "original_code": "153107256",
+            "brand": "Yorukoglu",
+            "product_name": "ÇİLEKLİ SÜT 180 ML",
+            "volume": "180 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.5,
+            "shelfPosition": {
+                "x": 0.57,
+                "y": 0.18
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                1032,
+                282,
+                1169,
+                654
+            ]
+        },
+        {
+            "original_code": "153100000",
+            "brand": "PINAR",
+            "product_name": "Süt Tam Yağlı %3,3 1/1",
+            "volume": "1000 ML",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.78,
+            "shelfPosition": {
+                "x": 0.1,
+                "y": 0.85
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                129,
+                2057,
+                254,
+                2368
+            ]
+        },
+        {
+            "original_code": "153107258",
+            "brand": "Birsah",
+            "product_name": "MİLKTEN MİLKİNO KAKAOLU 200 ml",
+            "volume": "200 G",
+            "category": "SÜT",
+            "price": "N/A",
+            "confidence": 0.46,
+            "shelfPosition": {
+                "x": 0.17,
+                "y": 0.21
+            },
+            "isEyeLevel": false,
+            "bbox": [
+                287,
+                445,
+                372,
+                666
+            ]
+        }
+    ]
+}
