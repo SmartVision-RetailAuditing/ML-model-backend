@@ -1,0 +1,21 @@
+# Python gereksizleri
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Model çıktıları ve geçici dosyalar
+ciktilar/
+*.jpg
+*.png
+
+# Git ve IDE ayarları
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Docker ve gereksinim dosyaları (isteğe bağlı)
+Dockerfile
+.dockerignore

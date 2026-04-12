@@ -1,6 +1,15 @@
+import torch
 from ultralytics import YOLO
 import easyocr
 from api.utils.helpers import turkce_karakter_temizle, urun_detay_bul
+
+# ==========================================
+# AKILLI DONANIM KONTROLÜ (OTOMATİK VİTES)
+# ==========================================
+# Sistemde CUDA (NVIDIA GPU) var mı diye bakar.
+# Varsa "cuda", yoksa "cpu" yazar.
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+HAS_GPU = torch.cuda.is_available()
 
 
 class ShelfDetector:
@@ -8,7 +17,8 @@ class ShelfDetector:
         self.model = YOLO(model_path)
 
     def detect(self, img, conf=0.45, iou=0.50):
-        return self.model.predict(img, conf=conf, iou=iou, augment=True)[0]
+        # device=0 yerine device=DEVICE yazdık
+        return self.model.predict(img, conf=conf, iou=iou, device=DEVICE)[0]
 
 
 class BrandClassifier:
@@ -17,7 +27,8 @@ class BrandClassifier:
         self.katalog = katalog
 
     def classify(self, crop_rgb):
-        res = self.model.predict(crop_rgb, verbose=False, augment=True)[0]
+        # device=0 yerine device=DEVICE yazdık
+        res = self.model.predict(crop_rgb, verbose=False, device=DEVICE)[0]
         idx = res.probs.top1
         conf = res.probs.top1conf.item()
         raw_name = res.names[idx]
@@ -28,7 +39,8 @@ class BrandClassifier:
 
 class TextValidator:
     def __init__(self, katalog):
-        self.reader = easyocr.Reader(['tr', 'en'], gpu=False)
+        # gpu=True veya False yerine, sistemde GPU varsa True, yoksa False gönderiyoruz
+        self.reader = easyocr.Reader(['tr', 'en'], gpu=HAS_GPU)
         self.markalar = set([k[1].get("brand").upper() for k in katalog.items() if k[1].get("brand")])
 
     def validate(self, crop_rgb):

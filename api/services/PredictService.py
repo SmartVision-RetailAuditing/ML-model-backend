@@ -5,6 +5,7 @@ import numpy as np
 import json
 import re
 import random
+import torch
 from dotenv import load_dotenv
 from api.core.ai_models import ShelfDetector, BrandClassifier, TextValidator
 from api.services.ImageService import upload_image_to_azure
@@ -17,10 +18,24 @@ load_dotenv()
 YOLO_DET_PATH = "models/best.pt"
 YOLO_CLS_PATH = "models/best_large.pt"
 CATALOG_PATH = "product_catalog_sut.json"
-GÜVEN_BARAJI = float(os.getenv("CONFIDENCE_THRESHOLD", "0.25"))
-USE_AZURE = os.getenv("USE_AZURE", "False").lower() == "true"
-CIKTI_KLASORU = "ciktilar"
 
+print(f"🚀 Donanım Kontrolü: {'GPU (CUDA) Aktif!' if torch.cuda.is_available() else 'CPU Çalışıyor (GPU Bulunamadı)'}")
+if torch.cuda.is_available():
+    print(f"🔥 Ekran Kartı: {torch.cuda.get_device_name(0)}")
+
+# --- .ENV'DEN GELEN DİNAMİK DEĞİŞKENLER ---
+USE_AZURE = os.getenv("USE_AZURE", "False").lower() == "true"
+GÜVEN_BARAJI = float(os.getenv("CONFIDENCE_THRESHOLD", "0.25"))
+YOLO_CONF = float(os.getenv("YOLO_CONF", "0.45"))
+YOLO_IOU = float(os.getenv("YOLO_IOU", "0.50"))
+OCR_FALLBACK_THRESHOLD = float(os.getenv("OCR_FALLBACK_THRESHOLD", "0.15"))
+EDGE_TOLERANCE = int(os.getenv("EDGE_TOLERANCE", "2"))
+
+# Raf sınırlarını string olarak alıp integer (tam sayı) listesine çeviriyoruz
+shelf_str = os.getenv("SHELF_THRESHOLDS", "400,800,1200,1600")
+SHELF_THRESHOLDS = [int(x.strip()) for x in shelf_str.split(",")]
+
+CIKTI_KLASORU = "ciktilar"
 os.makedirs(CIKTI_KLASORU, exist_ok=True)
 
 print("📂 Katalog yükleniyor...")
@@ -69,14 +84,15 @@ def process_image(file) -> dict:
     price_dict = {}
     detected_products = []
 
-    results = detector.detect(img)
+    # Yolo parametrelerini dinamik olarak yolluyoruz
+    results = detector.detect(img, conf=YOLO_CONF, iou=YOLO_IOU)
 
     for box in results.boxes:
         x1, y1, x2, y2 = map(int, box.xyxy[0])
         if int(box.cls[0]) == 0: continue
 
-        tolerans = 2
-        if x1 <= tolerans or x2 >= (img_w - tolerans) or y1 <= tolerans or y2 >= (img_h - tolerans):
+        # Dinamik Kenar Toleransı
+        if x1 <= EDGE_TOLERANCE or x2 >= (img_w - EDGE_TOLERANCE) or y1 <= EDGE_TOLERANCE or y2 >= (img_h - EDGE_TOLERANCE):
             continue
 
         crop = img[y1:y2, x1:x2]
@@ -86,7 +102,8 @@ def process_image(file) -> dict:
 
         marka, urun, conf, raw_name = classifier.classify(crop_rgb)
 
-        if conf < 0.15 or marka == "Bilinmiyor":
+        # Dinamik OCR Yedekleme (Fallback) Barajı
+        if conf < OCR_FALLBACK_THRESHOLD or marka == "Bilinmiyor":
             o_marka, o_conf = validator.validate(crop_rgb)
             if o_marka:
                 marka = o_marka
@@ -109,14 +126,15 @@ def process_image(file) -> dict:
 
         price_value = price_dict[original_code]
 
+        # Dinamik Raf Yükseklik Barajları
         center_y = (y1 + y2) / 2
-        if center_y < 400:
+        if center_y < SHELF_THRESHOLDS[0]:
             raf_no = 1
-        elif center_y < 800:
+        elif center_y < SHELF_THRESHOLDS[1]:
             raf_no = 2
-        elif center_y < 1200:
+        elif center_y < SHELF_THRESHOLDS[2]:
             raf_no = 3
-        elif center_y < 1600:
+        elif center_y < SHELF_THRESHOLDS[3]:
             raf_no = 4
         else:
             raf_no = 5

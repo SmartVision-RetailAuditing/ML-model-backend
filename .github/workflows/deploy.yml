@@ -1,0 +1,58 @@
+name: Smart Vision ML Model CI/CD
+
+on:
+  push:
+    branches: [ "main", "acceptance" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Deploy to Server via SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            mkdir -p ~/smart-vision
+            cd ~/smart-vision
+            
+            # Kodları güncelle
+            if [ -d ".git" ]; then
+              git pull origin main
+            else
+              git clone https://github.com/${{ github.repository }}.git .
+            fi
+
+            # BENZERSİZ İMAJ ETİKETİ (Build numarasını kullanıyoruz)
+            IMAGE_TAG="smart-vision-ML-Model:${{ github.run_number }}"
+
+            # Yeni imajı build et
+            docker build -t $IMAGE_TAG .
+
+            # Eski konteyneri durdur ve sil
+            docker stop ssmart-vision-ML-Model || true
+            docker rm smart-vision-ML-Model || true
+
+            # Yeni konteyneri çalıştır (Tüm .env ayarlarını buradan basıyoruz)
+            docker run -d \
+              --name smart-vision-ML-Model \
+              --restart always \
+              -p 8000:8000 \
+              -e USE_AZURE=True \
+              -e AZURE_BLOB_CONNECTION_STRING="${{ secrets.AZURE_CONNECTION_STRING }}" \
+              -e AZURE_BLOB_CONTAINER_NAME="${{ secrets.CONTAINER_NAME }}" \
+              -e YOLO_CONF="${{ secrets.YOLO_CONF }}" \
+              -e YOLO_IOU="${{ secrets.YOLO_IOU }}" \
+              -e CONFIDENCE_THRESHOLD="${{ secrets.CONF_THRESHOLD }}" \
+              -e OCR_FALLBACK_THRESHOLD="${{ secrets.OCR_THRESHOLD }}" \
+              -e EDGE_TOLERANCE="${{ secrets.EDGE_TOL }}" \
+              -e SHELF_THRESHOLDS="${{ secrets.SHELF_LIMITS }}" \
+              $IMAGE_TAG
+
+            # Gereksiz eski imajları temizle (opsiyonel)
+            docker image prune -f
