@@ -1,0 +1,22 @@
+# --- API & Sunucu ---
+fastapi
+uvicorn
+python-multipart
+
+# --- Görüntü İşleme & Yapay Zeka ---
+ultralytics
+opencv-python
+numpy
+torch
+torchvision
+easyocr
+
+# --- Çevre Değişkenleri & Bulut ---
+python-dotenv
+azure-storage-blob
+
+# --- Yardımcı Araçlar ---
+pandas
+ftfy
+regex
+tqdm
