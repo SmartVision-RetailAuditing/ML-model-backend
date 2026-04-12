@@ -1,0 +1,26 @@
+# --- GPU Destekli PyTorch (Öncelikli) ---
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch
+torchvision
+torchaudio
+
+# --- API & Sunucu ---
+fastapi
+uvicorn
+python-multipart
+
+# --- Görüntü İşleme & Yapay Zeka ---
+ultralytics
+opencv-python
+numpy
+easyocr
+
+# --- Çevre Değişkenleri & Bulut ---
+python-dotenv
+azure-storage-blob
+
+# --- Yardımcı Araçlar ---
+pandas
+ftfy
+regex
+tqdm
