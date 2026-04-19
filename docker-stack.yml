@@ -5,4 +5,5 @@ services:
       - 8000:8000
     volumes:
       - /home/deploy/models:/app/models  # host path : container path
+      - /home/deploy/.env:/app/.env:ro  # host path : container path
     restart: always
