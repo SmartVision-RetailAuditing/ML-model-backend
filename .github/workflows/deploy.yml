@@ -42,7 +42,7 @@ jobs:
       run: |
         rm -f ./stack.env
         printf '%s\n' \
-          'AZURE_BLOB_CONNECTION_STRING=${{ secrets.AZURE_BLOB_CONNECTION_STRING }}' \
+          'AZURE_CONNECTION_STRING=${{ secrets.AZURE_CONNECTION_STRING }}' \
           'USE_AZURE=${{ secrets.USE_AZURE }}' \
           'AZURE_BLOB_CONTAINER_NAME=${{ secrets.AZURE_BLOB_CONTAINER_NAME }}' \
           'YOLO_CONF=${{ secrets.YOLO_CONF }}' \
