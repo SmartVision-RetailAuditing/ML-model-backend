@@ -30,3 +30,33 @@ jobs:
           tags: |
             smartvisionretailauditing/mlmodel:latest
             smartvisionretailauditing/mlmodel:${{ github.sha }}
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs:
+      - build-and-push-image
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: create env file
+      run: |
+        echo "AZURE_BLOB_CONNECTION_STRING=${{ secrets.AZURE_BLOB_CONNECTION_STRING }}" > ./envfile
+        echo "USE_AZURE=${{ secrets.USE_AZURE }}" >> ./envfile >> ./envfile
+        echo "AZURE_BLOB_CONTAINER_NAME=${{ secrets.AZURE_BLOB_CONTAINER_NAME }}" >> ./envfile
+        echo "YOLO_CONF=${{ secrets.YOLO_CONF }}" >> ./envfile
+        echo "YOLO_IOU=${{ secrets.YOLO_IOU }}" >> ./envfile
+        echo "CONFIDENCE_THRESHOLD=${{ secrets.CONFIDENCE_THRESHOLD }}" >> ./envfile
+        echo "OCR_FALLBACK_THRESHOLD=${{ secrets.OCR_FALLBACK_THRESHOLD }}" >> ./envfile
+        echo "EDGE_TOLERANCE=${{ secrets.EDGE_TOLERANCE }}" >> ./envfile
+        echo "SHELF_THRESHOLDS=${{ secrets.SHELF_THRESHOLDS }}" >> ./envfile
+
+    - name: Docker Stack Deploy
+      uses: cssnr/stack-deploy-action@v1
+      with:
+        name: deploystack
+        file: docker-stack.yaml
+        host: ${{ secrets.VPS_HOST }}
+        user: deploy
+        ssh_key: ${{ secrets.DEPLOY_SSH_PRIVATE_KEY }}
+        env_file: ./envfile
