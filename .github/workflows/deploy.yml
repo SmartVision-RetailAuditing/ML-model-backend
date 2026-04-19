@@ -42,7 +42,7 @@ jobs:
       run: |
         rm -f ./stack.env
         printf '%s\n' \
-          'AZURE_CONNECTION_STRING=${{ secrets.AZURE_CONNECTION_STRING }}' \
+          'AZURE_BLOB_CONNECTION_STRING=${{ secrets.AZURE_BLOB_CONNECTION_STRING }}' \
           'USE_AZURE=${{ secrets.USE_AZURE }}' \
           'AZURE_BLOB_CONTAINER_NAME=${{ secrets.AZURE_BLOB_CONTAINER_NAME }}' \
           'YOLO_CONF=${{ secrets.YOLO_CONF }}' \
@@ -61,4 +61,4 @@ jobs:
         host: ${{ secrets.VPS_HOST }}
         user: deploy
         ssh_key: ${{ secrets.DEPLOY_SSH_PRIVATE_KEY }}
-        env_file: ./stack.env
+        env_file: './stack.env'
