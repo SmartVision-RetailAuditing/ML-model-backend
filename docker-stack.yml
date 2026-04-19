@@ -3,4 +3,6 @@ services:
     image: smartvisionretailauditing/mlmodel:latest
     ports:
       - 8000:8000
+    volumes:
+      - /home/deploy/models:/app/models  # host path : container path
     restart: always
