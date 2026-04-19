@@ -38,12 +38,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Validate secrets
-      run: |
-        [ -z "${{ secrets.AZURE_BLOB_CONNECTION_STRING }}" ] && echo "::error::AZURE_BLOB_CONNECTION_STRING is not set" && exit 1
-        [ -z "${{ secrets.AZURE_BLOB_CONTAINER_NAME }}" ] && echo "::error::AZURE_BLOB_CONTAINER_NAME is not set" && exit 1
-        [ -z "${{ secrets.USE_AZURE }}" ] && echo "::error::USE_AZURE is not set" && exit 1
-
     - name: create env file
       run: |
         rm -f ./stack.env
