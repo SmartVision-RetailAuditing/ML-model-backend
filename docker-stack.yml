@@ -6,11 +6,7 @@ services:
     volumes:
       - /home/deploy/models:/app/models  # host path : container path
       - /home/deploy/.env:/app/.env:ro  # host path : container path
-    command: nvidia-smi
     deploy:
-      placement:
-        constraints:
-          - node.labels.gpu == true
       resources:
         reservations:
           generic_resources:
