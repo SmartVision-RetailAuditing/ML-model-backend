@@ -2,7 +2,8 @@ name: deploy pipeline
 on:
   push:
     branches:
-      - "*"
+      - "main"
+      - "acceptance"
 
 permissions:
   packages: write
