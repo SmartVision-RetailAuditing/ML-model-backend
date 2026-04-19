@@ -40,15 +40,15 @@ jobs:
 
     - name: create env file
       run: |
-        echo "AZURE_BLOB_CONNECTION_STRING=${{ secrets.AZURE_BLOB_CONNECTION_STRING }}" > ./envfile
-        echo "USE_AZURE=${{ secrets.USE_AZURE }}" >> ./envfile >> ./envfile
-        echo "AZURE_BLOB_CONTAINER_NAME=${{ secrets.AZURE_BLOB_CONTAINER_NAME }}" >> ./envfile
-        echo "YOLO_CONF=${{ secrets.YOLO_CONF }}" >> ./envfile
-        echo "YOLO_IOU=${{ secrets.YOLO_IOU }}" >> ./envfile
-        echo "CONFIDENCE_THRESHOLD=${{ secrets.CONFIDENCE_THRESHOLD }}" >> ./envfile
-        echo "OCR_FALLBACK_THRESHOLD=${{ secrets.OCR_FALLBACK_THRESHOLD }}" >> ./envfile
-        echo "EDGE_TOLERANCE=${{ secrets.EDGE_TOLERANCE }}" >> ./envfile
-        echo "SHELF_THRESHOLDS=${{ secrets.SHELF_THRESHOLDS }}" >> ./envfile
+        echo "AZURE_BLOB_CONNECTION_STRING=${{ secrets.AZURE_BLOB_CONNECTION_STRING }}" > ./stack.env
+        echo "USE_AZURE=${{ secrets.USE_AZURE }}" >> ./stack.env
+        echo "AZURE_BLOB_CONTAINER_NAME=${{ secrets.AZURE_BLOB_CONTAINER_NAME }}" >> ./stack.env
+        echo "YOLO_CONF=${{ secrets.YOLO_CONF }}" >> ./stack.env
+        echo "YOLO_IOU=${{ secrets.YOLO_IOU }}" >> ./stack.env
+        echo "CONFIDENCE_THRESHOLD=${{ secrets.CONFIDENCE_THRESHOLD }}" >> ./stack.env
+        echo "OCR_FALLBACK_THRESHOLD=${{ secrets.OCR_FALLBACK_THRESHOLD }}" >> ./stack.env
+        echo "EDGE_TOLERANCE=${{ secrets.EDGE_TOLERANCE }}" >> ./stack.env
+        echo "SHELF_THRESHOLDS=${{ secrets.SHELF_THRESHOLDS }}" >> ./stack.env
 
     - name: Docker Stack Deploy
       uses: cssnr/stack-deploy-action@v1
@@ -58,4 +58,4 @@ jobs:
         host: ${{ secrets.VPS_HOST }}
         user: deploy
         ssh_key: ${{ secrets.DEPLOY_SSH_PRIVATE_KEY }}
-        env_file: ./envfile
+        env_file: ./stack.env
