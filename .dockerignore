@@ -1,21 +1,50 @@
-# Python gereksizleri
+# Python artifacts
 __pycache__/
-*.py[cod]
-*$py.class
-venv/
-.env
+*.pyc
+*.pyo
+*.pyd
 
-# Model çıktıları ve geçici dosyalar
+# temp files
 ciktilar/
 *.jpg
 *.png
 
-# Git ve IDE ayarları
-.git/
-.gitignore
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Build outputs
+build/
+dist/
+*.egg-info/
+
+# C extensions / caches
+*.so
+*.egg
+pip-wheel-metadata/
+
+# Package manager / lock files you don't need in build context
+*.egg-info
+pip-log.txt
+
+# IDE / editor files
 .vscode/
 .idea/
+*.swp
 
-# Docker ve gereksinim dosyaları (isteğe bağlı)
-Dockerfile
-.dockerignore
+# Git
+.git/
+.gitignore
+
+# Logs and temp
+*.log
+tmp/
+*.cache/
+
+# Large archives / data
+*.tar.gz
+*.zip
+data/
+datasets/
