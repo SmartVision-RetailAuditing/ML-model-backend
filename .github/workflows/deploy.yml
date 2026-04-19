@@ -38,17 +38,26 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Validate secrets
+      run: |
+        [ -z "${{ secrets.AZURE_BLOB_CONNECTION_STRING }}" ] && echo "::error::AZURE_BLOB_CONNECTION_STRING is not set" && exit 1
+        [ -z "${{ secrets.AZURE_BLOB_CONTAINER_NAME }}" ] && echo "::error::AZURE_BLOB_CONTAINER_NAME is not set" && exit 1
+        [ -z "${{ secrets.USE_AZURE }}" ] && echo "::error::USE_AZURE is not set" && exit 1
+
     - name: create env file
       run: |
-        echo 'AZURE_BLOB_CONNECTION_STRING=${{ secrets.AZURE_BLOB_CONNECTION_STRING }}' >> ./stack.env
-        echo 'USE_AZURE=${{ secrets.USE_AZURE }}' >> ./stack.env
-        echo 'AZURE_BLOB_CONTAINER_NAME=${{ secrets.AZURE_BLOB_CONTAINER_NAME }}' >> ./stack.env
-        echo 'YOLO_CONF=${{ secrets.YOLO_CONF }}' >> ./stack.env
-        echo 'YOLO_IOU=${{ secrets.YOLO_IOU }}' >> ./stack.env
-        echo 'CONFIDENCE_THRESHOLD=${{ secrets.CONFIDENCE_THRESHOLD }}' >> ./stack.env
-        echo 'OCR_FALLBACK_THRESHOLD=${{ secrets.OCR_FALLBACK_THRESHOLD }}' >> ./stack.env
-        echo 'EDGE_TOLERANCE=${{ secrets.EDGE_TOLERANCE }}' >> ./stack.env
-        echo 'SHELF_THRESHOLDS=${{ secrets.SHELF_THRESHOLDS }}' >> ./stack.env
+        rm -f ./stack.env
+        printf '%s\n' \
+          'AZURE_BLOB_CONNECTION_STRING=${{ secrets.AZURE_BLOB_CONNECTION_STRING }}' \
+          'USE_AZURE=${{ secrets.USE_AZURE }}' \
+          'AZURE_BLOB_CONTAINER_NAME=${{ secrets.AZURE_BLOB_CONTAINER_NAME }}' \
+          'YOLO_CONF=${{ secrets.YOLO_CONF }}' \
+          'YOLO_IOU=${{ secrets.YOLO_IOU }}' \
+          'CONFIDENCE_THRESHOLD=${{ secrets.CONFIDENCE_THRESHOLD }}' \
+          'OCR_FALLBACK_THRESHOLD=${{ secrets.OCR_FALLBACK_THRESHOLD }}' \
+          'EDGE_TOLERANCE=${{ secrets.EDGE_TOLERANCE }}' \
+          'SHELF_THRESHOLDS=${{ secrets.SHELF_THRESHOLDS }}' \
+          > ./stack.env
 
     - name: Docker Stack Deploy
       uses: cssnr/stack-deploy-action@v1
