@@ -6,4 +6,11 @@ services:
     volumes:
       - /home/deploy/models:/app/models  # host path : container path
       - /home/deploy/.env:/app/.env:ro  # host path : container path
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
     restart: always
