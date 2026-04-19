@@ -1,0 +1,27 @@
+import re
+
+def turkce_karakter_temizle(metin):
+    if not metin: return metin
+    degisim = {'ı':'i','İ':'I','I':'I','ğ':'g','Ğ':'G','ü':'u','Ü':'U','ş':'s','Ş':'S','ö':'o','Ö':'O','ç':'c','Ç':'C'}
+    for tr, eng in degisim.items(): metin = metin.replace(tr, eng)
+    return metin
+
+def urun_detay_bul(aranan_isim, katalog):
+    # 1. Adım: Tam eşleşme kontrolü
+    if aranan_isim in katalog:
+        d = katalog[aranan_isim]
+        return turkce_karakter_temizle(d.get("brand")), turkce_karakter_temizle(d.get("product_name"))
+    
+    # 2. Adım: Versiyon temizleyerek kontrol (_v1, _v2 vb.)
+    temiz = re.sub(r'(_v?\d+)$', '', aranan_isim, flags=re.IGNORECASE)
+    if temiz in katalog:
+        d = katalog[temiz]
+        return turkce_karakter_temizle(d.get("brand")), turkce_karakter_temizle(d.get("product_name"))
+    
+    # --- KRİTİK DEBUG ÇIKTISI ---
+    # Eğer buraya kadar geldiyse eşleşme bulunamamış demektir.
+    print(f"⚠️ [HARİTALAMA HATASI]: Model '{aranan_isim}' sınıfını buldu ama JSON kataloğunda bu anahtar (key) yok!")
+    print(f"👉 Çözüm: JSON dosyana '{aranan_isim}' isminde bir girdi ekle veya isimlendirmeyi kontrol et.")
+    # ----------------------------
+
+    return "Bilinmiyor", aranan_isim

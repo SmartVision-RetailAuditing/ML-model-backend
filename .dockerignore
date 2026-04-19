@@ -1,0 +1,50 @@
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# temp files
+ciktilar/
+*.jpg
+*.png
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Build outputs
+build/
+dist/
+*.egg-info/
+
+# C extensions / caches
+*.so
+*.egg
+pip-wheel-metadata/
+
+# Package manager / lock files you don't need in build context
+*.egg-info
+pip-log.txt
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+
+# Git
+.git/
+.gitignore
+
+# Logs and temp
+*.log
+tmp/
+*.cache/
+
+# Large archives / data
+*.tar.gz
+*.zip
+data/
+datasets/
