@@ -59,10 +59,6 @@ services:
       # Specify the default network for Traefik to connect to services
       - "--providers.swarm.network=deploystack_traefik_proxy"
 
-      # API & Dashboard
-      - "--api.dashboard=true" # Enable the dashboard
-      - "--api.insecure=false" # Explicitly disable insecure API mod
-
       # Observability
       - "--log.level=INFO" # Set the Log Level e.g INFO, DEBUG
       - "--accesslog=true" # Enable Access Logs
@@ -78,50 +74,28 @@ services:
         constraints:
           - node.role == manager
 
-      # Traefik Dynamic configuration via labels
-      # In Swarm, labels on the service definition configure Traefik routing for that service.
-      labels:
-        - "traefik.enable=true"
-
-        # Dashboard router
-        - "traefik.http.routers.dashboard.rule=Host(`dashboard.smartvisionyu.me`)"
-        - "traefik.http.routers.dashboard.entrypoints=websecure"
-        - "traefik.http.routers.dashboard.service=api@internal"
-        - "traefik.http.routers.dashboard.tls=true"
-
-        # Basic‑auth middleware
-        - "traefik.http.middlewares.dashboard-auth.basicauth.users=admin:$$apr1$$X2dvy.Wx$$PM1HHVhUvxuhaof4A3FGg."
-        - "traefik.http.routers.dashboard.middlewares=dashboard-auth@swarm"
-
-        # Service hint
-        - "traefik.http.services.traefik.loadbalancer.server.port=8080"
-
-  # Deploy the Whoami application
-  whoami:
-    image: traefik/whoami
+  model:
+    image: smartvisionretailauditing/mlmodel:latest
     networks:
       - traefik_proxy
+    ports:
+      - 8000:8000
+    volumes:
+      - /home/deploy/models:/app/models  # host path : container path
+      - /home/deploy/.env:/app/.env:ro  # host path : container path
+
     deploy:
       labels:
         # Enable Service discovery for Traefik
         - "traefik.enable=true"
         # Define the WHoami router rule
-        - "traefik.http.routers.whoami.rule=Host(`whoami.smartvisionyu.me`)"
+        - "traefik.http.routers.whoami.rule=Host(`ai.smartvisionyu.me`)"
         # Expose Whoami on the HTTPS entrypoint
         - "traefik.http.routers.whoami.entrypoints=websecure"
         # Enable TLS
         - "traefik.http.routers.whoami.tls=true"
         # Expose the whoami port number to Traefik
         - "traefik.http.services.whoami.loadbalancer.server.port=80"
-
-  model:
-    image: smartvisionretailauditing/mlmodel:latest
-    ports:
-      - 8000:8000
-    volumes:
-      - /home/deploy/models:/app/models  # host path : container path
-      - /home/deploy/.env:/app/.env:ro  # host path : container path
-    deploy:
       resources:
         reservations:
           generic_resources:
