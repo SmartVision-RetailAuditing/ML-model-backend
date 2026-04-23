@@ -57,7 +57,7 @@ services:
       - "--providers.swarm.exposedbydefault=false"
 
       # Specify the default network for Traefik to connect to services
-      - "--providers.swarm.network=traefik_traefik_proxy"
+      - "--providers.swarm.network=deploystack_traefik_proxy"
 
       # API & Dashboard
       - "--api.dashboard=true" # Enable the dashboard
