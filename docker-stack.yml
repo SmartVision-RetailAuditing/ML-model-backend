@@ -78,8 +78,6 @@ services:
     image: smartvisionretailauditing/mlmodel:latest
     networks:
       - traefik_proxy
-    ports:
-      - 8000:8000
     volumes:
       - /home/deploy/models:/app/models  # host path : container path
       - /home/deploy/.env:/app/.env:ro  # host path : container path
@@ -89,13 +87,13 @@ services:
         # Enable Service discovery for Traefik
         - "traefik.enable=true"
         # Define the WHoami router rule
-        - "traefik.http.routers.whoami.rule=Host(`ai.smartvisionyu.me`)"
+        - "traefik.http.routers.model.rule=Host(`ai.smartvisionyu.me`)"
         # Expose Whoami on the HTTPS entrypoint
-        - "traefik.http.routers.whoami.entrypoints=websecure"
+        - "traefik.http.routers.model.entrypoints=websecure"
         # Enable TLS
-        - "traefik.http.routers.whoami.tls=true"
+        - "traefik.http.routers.model.tls=true"
         # Expose the whoami port number to Traefik
-        - "traefik.http.services.whoami.loadbalancer.server.port=80"
+        - "traefik.http.services.model.loadbalancer.server.port=8000"
       resources:
         reservations:
           generic_resources:
