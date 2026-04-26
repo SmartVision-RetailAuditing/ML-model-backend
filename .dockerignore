@@ -1,31 +1,8 @@
-main.py
-main_classifier.py
-database_builder.py
-test_images/
-dataset/
-references/
-
-# Versiyon kontrol
-.git/
-.gitignore
-
-# Python ve sanal ortam dosyaları
-__pycache__/
-*.py[cod]
-*$py.class
+# .dockerignore
 venv/
-env/
-.venv/
-
-# Çevre değişkenleri (Sunucuda kendiniz tanımlamalısınız)
+__pycache__/
+*.pyc
 .env
-
-# Yerel test klasörleri ve gereksiz resimler (Bunlar imaj boyutunu şişirmesin)
-ciktilar/
-crops/
-references/
-
-# IDE dosyaları
-.vscode/
-.idea/
-
+output_images/
+.git/
+.github/
