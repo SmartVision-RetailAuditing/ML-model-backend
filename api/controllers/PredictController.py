@@ -6,6 +6,11 @@ router = APIRouter()
 
 @router.post("/analyze")
 async def predict(file: UploadFile = File(...)):
+<<<<<<< HEAD
     # process_image içeride file.read() kullandığı için direkt file.file objesini yolluyoruz
     result = process_image(file.file)
     return JSONResponse(content=result)
+=======
+    result = process_image(file.file)
+    return JSONResponse(result)
+>>>>>>> origin/development

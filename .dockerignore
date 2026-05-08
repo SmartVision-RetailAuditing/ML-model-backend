@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Python artifacts
 __pycache__/
 *.pyc
@@ -48,3 +49,13 @@ tmp/
 *.zip
 data/
 datasets/
+=======
+# .dockerignore
+venv/
+__pycache__/
+*.pyc
+.env
+output_images/
+.git/
+.github/
+>>>>>>> origin/development

@@ -99,21 +99,41 @@ class PipelineManager:
             product_name = details.get("product_name", "Bilinmeyen Ürün") if details else "Bilinmeyen Ürün"
             volume = details.get("volume", "") if details else ""
             category = details.get("category", "") if details else ""
+<<<<<<< HEAD
             price = details.get("price", "N/A") if details else "N/A" 
+=======
+            
+            # --- FİYAT GÜNCELLEMESİ (String N/A yerine null mantığı) ---
+            raw_price = details.get("price") if details else None
+            try:
+                # Fiyat varsa float olarak kaydet, yoksa None yap
+                price = float(raw_price) if raw_price is not None else None
+            except (ValueError, TypeError):
+                # Harf, boşluk veya geçersiz veri geldiyse çökmesin, None olsun
+                price = None
+>>>>>>> origin/development
             
             # --- 2. RAF VE HİZALAMA HESAPLAMALARI ---
             shelf_pos_x = round((x1 + x2) / (2 * img_w), 2)
             shelf_pos_y = round((y1 + y2) / (2 * img_h), 2)
             is_eye_level = 0.3 <= shelf_pos_y <= 0.6
 
+<<<<<<< HEAD
             # --- 3. JSON OBJESİNE EKLE (Eksikler giderildi!) ---
+=======
+            # --- 3. JSON OBJESİNE EKLE ---
+>>>>>>> origin/development
             image_results["detectedProducts"].append({
                 "original_code": original_code,
                 "brand": marka,
                 "product_name": product_name,
                 "volume": volume,
                 "category": category,
+<<<<<<< HEAD
                 "price": price,
+=======
+                "price": price,  # Python None döndüğü için JSON'a otomatik "null" olarak basılır
+>>>>>>> origin/development
                 "confidence": round(float(conf), 2),
                 "shelfPosition": {"x": shelf_pos_x, "y": shelf_pos_y},
                 "isEyeLevel": is_eye_level,
@@ -121,8 +141,16 @@ class PipelineManager:
             })
 
             # --- GÖRSEL ETİKETLEME ---
+<<<<<<< HEAD
             label = f"{marka} {price}"
             renk = (0, 255, 0) if conf >= self.baraj else (0, 0, 255)
+=======
+            # Ekrana nullTL yazmasın diye, fiyat yoksa string'i boş bırakıyoruz
+            display_price = f" {price}TL" if price is not None else ""
+            label = f"{marka}{display_price}"
+            renk = (0, 255, 0) if conf >= self.baraj else (0, 0, 255)
+            
+>>>>>>> origin/development
             cv2.rectangle(img, (x1, y1), (x2, y2), renk, 2)
             (w, h), _ = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 2)
             cv2.rectangle(img, (x1, y1 - 20), (x1 + w, y1), renk, -1) 
