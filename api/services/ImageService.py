@@ -10,60 +10,125 @@ from utils.helpers import turkce_karakter_temizle
 class ImageService:
     @staticmethod
     def bytes_to_cv2(image_bytes):
+        """
+        Upload edilen image bytes -> OpenCV image
+        """
         nparr = np.frombuffer(image_bytes, np.uint8)
         return cv2.imdecode(nparr, cv2.IMREAD_COLOR)
 
     @staticmethod
-    def draw_boxes_and_save(img, products, tags, output_path, baraj=config.DINO_SIMILARITY_THRESHOLD):
-        # 1. Fiyat Etiketlerini Çizme kısmını tamamen sildik.
+    def draw_boxes_and_save(img, products, tags, output_path, threshold=None):
+        """
+        Ürün kutularını çizer ve sonucu kaydeder
+        """
 
-        # 2. Ürünleri Çiz (Sadece Kutular, Marka ve Skor)
+        baraj = threshold or getattr(config, "DINO_SIMILARITY_THRESHOLD", 0.5)
+
         for prod in products:
-            bbox_info = prod.get("bounding_box")
-            if not bbox_info: continue
+            bbox = prod.get("bounding_box")
+            if not bbox:
+                continue
 
-            x1 = bbox_info.get("x", 0)
-            y1 = bbox_info.get("y", 0)
-            x2 = x1 + bbox_info.get("width", 0)
-            y2 = y1 + bbox_info.get("height", 0)
+            x1 = bbox.get("x", 0)
+            y1 = bbox.get("y", 0)
+            x2 = x1 + bbox.get("width", 0)
+            y2 = y1 + bbox.get("height", 0)
 
             conf = prod.get("confidence_score", 0)
             marka = prod.get("brand_name", "Bilinmiyor")
 
-            cizim_marka = turkce_karakter_temizle(marka)
-            renk = (0, 255, 0) if conf >= baraj else (0, 0, 255)
+            marka_clean = turkce_karakter_temizle(marka)
+            color = (0, 255, 0) if conf >= baraj else (0, 0, 255)
 
-            # Sadece Üst Etiket (Marka ve Skor) hazırlıyoruz
-            label_top = f"{cizim_marka} (%{int(conf * 100)})"
+            label = f"{marka_clean} (%{int(conf * 100)})"
 
-            # Ana kutuyu çiz
-            cv2.rectangle(img, (x1, y1), (x2, y2), renk, 2)
+            # Box
+            cv2.rectangle(img, (x1, y1), (x2, y2), color, 2)
 
-            # --- ÜST METİN (Marka) Çizimi ---
-            (w_top, h_top), _ = cv2.getTextSize(label_top, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 2)
-            # Metin arka planı
-            cv2.rectangle(img, (x1, y1 - 25), (x1 + w_top, y1), renk, -1)
-            # Metnin kendisi
-            cv2.putText(img, label_top, (x1, y1 - 7), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
+            # Label background
+            (w, h), _ = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 2)
+            cv2.rectangle(img, (x1, y1 - 25), (x1 + w, y1), color, -1)
 
-            # Alt taraftaki fiyat (fiat) bandı tamamen kaldırıldı.
+            # Label text
+            cv2.putText(
+                img,
+                label,
+                (x1, y1 - 7),
+                cv2.FONT_HERSHEY_SIMPLEX,
+                0.5,
+                (0, 0, 0),
+                1,
+                cv2.LINE_AA
+            )
 
         cv2.imwrite(output_path, img)
         return output_path
 
     @staticmethod
     def upload_to_azure_bg(image_path: str, blob_name: str):
-        if not config.USE_AZURE or not config.AZURE_BLOB_CONNECTION_STRING: return
-        try:
-            client = BlobServiceClient.from_connection_string(config.AZURE_BLOB_CONNECTION_STRING)
-            container = client.get_container_client(config.AZURE_BLOB_CONTAINER_NAME)
-            blob = container.get_blob_client(blob_name)
-            with open(image_path, "rb") as data:
-                blob.upload_blob(data, overwrite=True, content_settings=ContentSettings(content_type="image/jpeg"))
-            print(f"☁️ Azure yüklemesi başarılı: {blob_name}")
+        """
+        Background task için Azure upload
+        """
 
+        if not getattr(config, "USE_AZURE", False):
+            return None
+
+        if not config.AZURE_BLOB_CONNECTION_STRING:
+            return None
+
+        try:
+            blob_service = BlobServiceClient.from_connection_string(
+                config.AZURE_BLOB_CONNECTION_STRING
+            )
+
+            container = blob_service.get_container_client(
+                config.AZURE_BLOB_CONTAINER_NAME
+            )
+
+            blob_client = container.get_blob_client(blob_name)
+
+            with open(image_path, "rb") as data:
+                blob_client.upload_blob(
+                    data,
+                    overwrite=True,
+                    content_settings=ContentSettings(content_type="image/jpeg")
+                )
+
+            print(f"☁️ Azure upload OK: {blob_name}")
+
+            # local cleanup (opsiyonel)
             if os.path.exists(image_path):
                 os.remove(image_path)
-                print(f"🧹 Lokal temizlik yapıldı: Kalabalık yapmaması için silindi.")
+                print(f"🧹 Local file deleted: {image_path}")
+
         except Exception as e:
-            print(f"⚠️ Azure Hatası: {e}")
+            print(f"❌ Azure upload error: {e}")
+
+    @staticmethod
+    def upload_to_azure_sync(image_path: str) -> str:
+        """
+        Sync upload (istersen direkt URL döndürmek için)
+        """
+
+        blob_name = f"{uuid.uuid4()}.jpg"
+
+        blob_service = BlobServiceClient.from_connection_string(
+            config.AZURE_BLOB_CONNECTION_STRING
+        )
+
+        container = blob_service.get_container_client(
+            config.AZURE_BLOB_CONTAINER_NAME
+        )
+
+        blob_client = container.get_blob_client(blob_name)
+
+        with open(image_path, "rb") as data:
+            blob_client.upload_blob(
+                data,
+                overwrite=True,
+                content_settings=ContentSettings(content_type="image/jpeg")
+            )
+
+        account_name = config.AZURE_BLOB_CONNECTION_STRING.split("AccountName=")[1].split(";")[0]
+
+        return f"https://{account_name}.blob.core.windows.net/{config.AZURE_BLOB_CONTAINER_NAME}/{blob_name}"

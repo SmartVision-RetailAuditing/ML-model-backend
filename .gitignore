@@ -15,8 +15,6 @@ logos/
 crops/
 ciktilar/
 output_images/
-
-
 api/output_images/
 
 best.pt

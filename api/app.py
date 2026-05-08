@@ -1,7 +1,6 @@
-# app.py
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from controllers.Predict_controller import router as predict_router
+from api.controllers.PredictController import router as predict_router
 
 app = FastAPI(title="Market Raf Analiz API")
 
@@ -17,4 +16,4 @@ app.include_router(predict_router, tags=["Prediction"])
 
 @app.get("/")
 def root():
-    return {"mesaj": "Sistem aktif. Backend'den /api/v1/predict adresine istek atabilirsin."}
+    return {"mesaj": "Sistem aktif"}
