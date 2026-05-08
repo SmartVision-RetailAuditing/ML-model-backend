@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # --- GPU Destekli PyTorch (Öncelikli) ---
 --extra-index-url https://download.pytorch.org/whl/cu124
 torch
@@ -20,6 +21,20 @@ python-dotenv
 azure-storage-blob
 
 # --- Yardımcı Araçlar ---
+=======
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
+fastapi
+uvicorn
+python-multipart
+ultralytics
+opencv-python-headless
+numpy
+easyocr
+python-dotenv
+azure-storage-blob
+>>>>>>> origin/development
 pandas
 ftfy
 regex
