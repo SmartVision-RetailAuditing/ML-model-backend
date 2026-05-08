@@ -1,73 +1,23 @@
-<<<<<<< HEAD
-# Environments
-!.env.example
-env/
-.env
-.envrc
-.venv
-.venv/
-venv
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Models
-*.pt
-
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
-*.py[codz]
+*.py[cod]
 *$py.class
-
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-=======
-.env
-api/.env
-
+*.pkl
+.venv/
 venv/
-__pycache__/
-*.pyc
 
+# AI & Media (Heavy Files)
+references/
+output_images/
+weights/
+*.jpg
+*.png
+*.jpeg
+*.webp
+
+# IDEs
 .idea/
 .vscode/
 
-dataset/
-test_images/
-references/
-logos/
-crops/
-ciktilar/
-output_images/
-api/output_images/
-
-best.pt
-best_cls.pt
-*.pt
-*.pkl
-
-product_catalog.json
-product_catalog_sut.json
-product_embeddings.pkl
->>>>>>> origin/development
+# Secrets & Config
+.env
